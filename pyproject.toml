@@ -1,18 +1,25 @@
 [project]
-name = "rag-eval"
+name = "rag-eval-deepeval"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple transcript retriever with local MiniLM embeddings"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "chromadb>=1.5.9",
-    "deepeval>=4.1.5",
-    "langchain-chroma>=1.1.0",
-    "langchain-core>=1.5.3",
-    "langchain-openai>=1.4.2",
-    "langchain-text-splitters>=1.1.2",
-    "openai>=2.53.0",
-    "pytest>=9.1.1",
-    "python-dotenv>=1.2.2",
-    "sentence-transformers>=5.7.0",
+authors = [
+    { name = "Prakhar Singh", email = "prakhars156@gmail.com" }
 ]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain-chroma>=1.0,<2",
+    "langchain-core>=1.0,<2",
+    "langchain-huggingface>=1.2.3,<2",
+    "langchain-text-splitters>=1.0,<2",
+    "python-dotenv>=1.0,<2",
+    "sentence-transformers>=5.0,<6",
+    "torch>=2.9,<3",
+]
+
+[project.scripts]
+rag-eval-deepeval = "rag_eval_deepeval.retriever:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"

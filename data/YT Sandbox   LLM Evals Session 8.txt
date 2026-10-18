@@ -1,0 +1,2258 @@
+Hi guys, good evening. Am I audible? Okay, thank you. So sorry for the delay. I don't
+take all of this time. Okay.
+and then we will start the class
+meanwhile if you have any questions
+you can ask
+good evening, good evening everyone
+if you have any questions you can ask
+yeah
+there is a small announcement
+if you remember we were studying benchmarks
+and there we were studying different model capabilities
+I have given you knowledge capabilities
+and you can also use it as a benchmark
+so if you want to learn more about
+the different models
+you can also use it as a benchmark
+and you can also use it as a benchmark
+I have given you knowledge capabilities
+in very detailed
+and I have promised you that
+we will provide you lectures on other capabilities
+and I have promised you that we will provide you lectures on other capabilities
+so now in your dashboard
+you will get to see lectures
+on three other capabilities
+one is
+reasoning
+one is maths
+and the last one is coding
+so we have recorded three so far
+there are big lectures, properly covered
+there are big lectures, properly covered
+there are two hours of lectures
+so whenever you get time
+you can see it once
+you will have knowledge
+and the three or four capabilities left
+such as
+instruction following
+long context
+or safety
+we are recording lectures on these
+and it will take one more week
+and you will get that too
+in the dashboard
+it is on you
+you can cover it on your own pace
+ok?
+I have missed some of the classes in between
+can I pick up the class from today
+or should I come here after
+completing back notes?
+honestly today's class doesn't depend
+on the previous classes
+so you can attend this one
+and the next one also
+meanwhile whenever you get time
+you can cover some of the things
+you can attend today's class
+there will be no problem
+so what I will do is
+I will first of all share my screen
+and let's start our
+session
+ok?
+let's start the session
+so
+what we are going to do in the session
+before I tell you about it
+I would like to give a recap
+of this playlist
+because we have covered
+two big milestones in this playlist
+so you should know
+where we are lying
+in the whole curriculum
+so in the LLMEval
+playlist
+we have covered three or four lectures
+which we spent
+in the introduction
+or you can say fundamentals
+where we
+understood
+why LLMEval is needed
+what are LLMEval
+we covered all these things
+we discussed
+reference based evals, reference free evals
+we discussed online evals
+offline evals
+we discussed all these concepts
+and the most important concept we discussed
+was that there are two types of LLMEval
+one is model evals
+and the other is
+application evals
+and we discussed that
+we will focus more on application evals
+but
+we first
+covered model evals
+which we are doing in the last two or three sessions
+so while studying model evals
+we discussed that
+model evals also have two types of evals
+one is standardized evals
+which we call
+benchmarks
+which we
+studied knowledge capability
+where we discussed multiple benchmarks
+that
+comes under this topic
+and then we also discussed
+that according to your application
+when you have to choose a model
+you can run custom
+model evals
+which you make your own dataset
+and run
+so we covered this in the previous lecture
+so in short
+we have covered
+so much in this playlist
+and now the most important
+part of this playlist is
+which is this
+application evals
+and we will start from today
+from today we will learn that
+if you have an LLMEval based application
+then how can you evaluate it
+based on all the knowledge
+that we have gathered till now
+and
+here also you have to understand
+that there can be
+many types of LLME based applications
+right
+so you can have simple chatbots
+or you can have
+rack based chatbots
+or you can have
+agents
+all of these are examples of LLME
+based applications
+so if I give you an example of LLME
+then it can be multi model apps
+basically such applications
+where
+apart from text
+in some modality
+for example
+image generator
+that is also an LLME based application
+but there you are generating image
+then you can have
+fixed
+schema
+output
+type of application
+where your application
+uses LLME and gives
+fixed schema output
+which can be an example of Zomato
+which case study we discussed
+2-3 lectures before
+where you are reading the email
+its content and you are classifying
+it as support email
+or
+refund email or technical email
+so here output
+will follow a fixed schema
+so this is also a type of LLME based application
+so honestly
+it is not possible for me
+to teach you all
+kind of applications and their
+application evals
+I can't teach you how to run
+application eval on chatbots
+on rack
+on agents
+so I had to
+select
+and I had in mind that I will teach you
+2 things
+I have selected 2 things
+which we are going to study
+1st is rack
+because it is very important
+most of the chatbots
+that you will build
+in your professional journey
+will have rack functionality
+so rack becomes very important
+in that sense and 2nd
+I will teach you agents application
+eval
+because agents is also very important
+so the rest of the things
+which is a simple chatbot
+which doesn't have any function of rack
+or agent
+I am not teaching you how to evaluate that
+I would expect that
+if you read more difficult things
+then you will automatically
+do easy things
+this one is also kind of easy
+this is also kind of easy
+multimodal
+app is a little different
+I would not say it is difficult
+it is slightly different from the other things
+but anyway you can do it
+the only thing is that
+they exist less in production setup
+means there are very few companies
+very few projects which are of multimodal nature
+mostly you will see rack
+and agent design patterns
+that is why we are going to cover
+rack and agents
+application eval going forward
+so now
+today's session and next 2-3 sessions
+which are going to be
+on rack eval
+basically we will make a rack chatbot
+and we will properly
+evaluate it
+and after watching these 3-4 sessions
+you will be able to answer
+this very important interview question
+very easily
+the question is
+how do you
+evaluate
+your
+rack chatbot
+very famous question
+for JNAI interviews
+almost 8 out of 10
+interviews are asked
+and most of the times students
+are not able to give convincing answers
+many people don't know
+because they have never studied evals
+those who have studied evals
+they are not able to give structured answers
+I guarantee you that if you watch
+today's session and next 3-4 sessions properly
+then you
+will be able to give a very proper answer
+and you will impress the other person
+that is my guarantee
+so I hope I was able to explain to you
+where we are existing in this playlist
+and what is our next direction
+our next direction
+is based on whatever we have
+learned so far
+we are going to use that to read rack evals
+with the help of a case study
+so is this entire
+discussion clear? I took around 5-10 minutes
+but this clarity is very important
+in the starting so that is why
+I told you in detail
+let me know if you have any doubts
+questions, confusion, anything
+you can tell me
+if not
+then we will move ahead
+I will just wait for 30 seconds
+if any question comes I will answer
+ok
+ok
+so I guess most likely things are clear
+so now we
+start our
+rack eval
+obviously first of all
+we need a
+rack project
+which we will evaluate
+so I will tell you
+what this project is
+I did not choose
+very fancy
+problem statement intentionally
+I had very good problem statements
+in which
+you can do very different things
+in the process of making the application
+but I felt that
+our focus here
+instead of making a very fancy
+rack application
+how can we evaluate
+a simple rack application
+and that is why
+I have taken a very simple problem statement
+it will be a rack chart bot
+but it will be simple
+but you will enjoy doing its evaluation
+so what we are building is
+we are basically building
+a campus x
+doubt
+solver
+so basic problem statement
+premise is that
+you are doing this course
+of LLMEval
+where we take around 2 lectures every week
+and at the end of every lecture
+we provide you
+recording and
+transcript
+of the lecture
+so till now every lecture
+has a transcript
+so what we will do is
+use these transcripts as
+documents
+and we will feed these documents in LLME
+and then with this LLME
+you can ask
+any doubt which is in this
+playlist
+so basically we are making a rack chart bot
+for this particular course
+with the help of all the transcripts
+that we have
+I won't explain how the rack works
+I am pretty sure you have read it so many times
+that you know how the rack works
+retriever, generator
+and a vector database
+an embedding model
+you understand all of that
+so it is not going into working but roughly explaining
+the problem statement that we are going to
+build a simple campus x doubt
+solver for this particular course
+I am not talking about other courses
+just LLMEval course
+because we have
+transcripts of every lecture of this course
+so what we will do
+we will first
+build this
+chart bot, this rack project
+and then we will evaluate it
+in fact
+in the process of building it
+we will also evaluate it
+so I hope you understood the problem statement
+there is nothing special to explain here
+so let's move ahead
+and discuss the most important thing
+that when
+this chart bot is built
+then how will we evaluate it
+we understand this
+so we are going to
+make a proper
+eval suite
+I think I have taught you this in
+a lecture, I don't know if you remember
+that whenever you make
+an LLM based application
+then it doesn't have just one
+single evaluation
+it has multiple evaluations
+so we are going to do that
+that we will evaluate our
+made rack chart bot from every angle
+at different levels
+and we will deploy it
+only after all those evaluations
+and even after
+all those evaluations we will evaluate it
+with the help of online evals
+so the whole process
+of this rack chart bot
+evaluation, I want to share
+that framework with you
+so the first and
+most important thing
+that we will evaluate our rack chart bot
+at three levels
+the first level will be
+component level
+second level
+pipeline
+pipeline level
+and third level
+application or system level
+I have already
+taught you this
+that you can evaluate any LLM based application
+at three levels
+these are the three levels
+so first of all let's talk about
+component level
+what you do at component level
+is that the time you are building a rack chart bot
+at that time
+you also evaluate the components
+so
+we will have to discuss a little
+about the architecture of the rack chart bot
+you must know that you have a
+retriever
+and you have a generator
+and you have
+a vector database
+in which
+all your documents
+are stored in the form of vectors
+as soon as you get a query
+you send that query
+to the vector database
+so what the vector database does
+is that it sends
+the closest four to five relevant
+documents
+basically this whole work is
+of retriever
+so the retriever gives you
+question plus relevant context
+you send this question and relevant context
+to the generator
+and the generator
+generates an answer about both these things
+this is the working of a basic
+rack chart bot
+so if you want to develop step by step
+obviously what you will do first
+you will build this retriever
+once this retriever is built
+then you will build this generator
+and you will connect both of them
+so this pipeline
+you call it a rack
+so our strategy will be
+that on step one
+first of all
+we will build the retriever
+basically we will write the retriever code
+so here you do all the work
+you load the documents
+chunk them
+put them in the embedding model
+and convert them into vectors
+and after that with the help of a retriever
+you will bring a new query and fetch relevant documents
+so we call this whole work
+the retriever
+so as soon as we build this retriever
+in step two
+we will immediately
+evaluate this retriever
+independently, just the retriever
+we are not focusing on the entire application
+right now our entire focus is
+that the retriever we have built
+is it working properly or not
+and the retriever
+is working properly
+it means that given a question
+is my retriever
+able to fetch the right documents
+from the vector database
+or not
+so here we will use two metrics for evaluation
+one will be recall
+which tells
+how many of the right documents
+I was able to bring
+and the second is precision
+which means
+how many of the documents
+I brought were of use
+so we will evaluate
+our retriever on both of them
+and once this evaluation is done
+and we are satisfied
+that our retriever is working properly
+then we will move to step three
+and in step three
+we will start
+building our generator
+so now we will write the generator code
+generator is basically
+an LLM in which you give
+a question and relevant context
+and that generator
+gives you an answer in return
+so we will build this in isolation
+and after building this
+we will evaluate this
+in step four
+and in evaluating this
+you will learn two or three metrics
+one will be faithfulness
+which basically tells
+whether the answer is generated
+in the given context
+or the model hallucinated
+by itself
+so we will check this
+second we will check
+that your answer
+generated
+is relevant with the question
+and third
+we will judge citation accuracy
+so you must have seen
+that chart GPTB sometimes gives
+answers by looking at a document
+so you must have seen that
+I have picked this up from this document
+or from this link
+so we call this citation
+so what is our doubt solver
+doing?
+solving a doubt for a given question
+so along with that he will tell us
+that this question
+which session Nitesh sir
+discussed, so we will provide the link
+of that transcript
+so we will judge citation accuracy
+in the generator
+important thing
+we will evaluate the generator
+in isolation
+which basically means
+that at this point your generator
+is not connected
+to the retriever
+which basically means that
+we will manually
+provide some question
+and context
+kind of like a golden dataset
+we are providing independently
+retrievers are not getting
+any input, we have not made this pipeline
+we are doing component level
+evaluation
+once this is evaluated
+in isolation, generator
+and we are satisfied that this generator
+is working well on its own
+then our level
+will achieve
+that we have done things at component level
+our retriever is working well in isolation
+our generator is working well in isolation
+we are done with the stage one
+after that
+we come to the next stage
+which is step five
+where now what we will do
+we will build our rag pipeline
+we will build our rag pipeline
+rag pipeline means
+that we will connect
+our retriever and generator
+very simple code
+connected, after this
+comes step six
+where we will check that
+when these two are connected
+and a pipeline is formed
+is this pipeline working properly
+or not
+and here the evaluation
+is a very famous term
+we call it rag
+triad
+so basically what you do here
+as soon as you make rag pipeline
+you check three
+metrics
+and we call these three metrics rag triad
+why I tell you
+so three things are existing here
+first of all the user's question
+the context we have got
+from vector database
+which has brought the retriever
+and the answer generated
+by generator
+these three things exist
+so
+in these three
+pairs
+three metrics exist
+like for question and context
+a metric exists
+which we call context
+relevance
+which tells
+that for a given question
+the context
+which has been fetched from retriever
+is it relevant or not
+with the question
+second is
+answer and context
+we call this faithfulness
+this basically
+tells us that the answer
+generated is it
+generated from context or
+something hallucinated the model
+and third you will check
+that is there a relation
+between answer and question
+and the metric for this we call
+answer relevance
+here basically
+it is told that given a question
+the answer generated is
+relevant for the question or not
+so we
+in isolation
+test these three metrics
+of our rag pipeline
+if these three metrics
+are working properly
+it means that your rag pipeline
+is working properly
+and if these three metrics are done
+then our particular level
+will be done
+so so far the flow
+is clear to everyone, what we are doing
+we are not doing that we have made
+our rag chart board first
+and then we are evaluating it
+no, this is not how it works
+your building the chart board
+and evaluating it
+it works together, it is just like software
+software we don't do that
+that you make the whole application and then
+test it, no, you
+test it at the feature level and function level
+here exactly the same is happening
+that you tested your components
+when you joined the components
+you tested the pipeline
+now your application is there
+so you will test it at the application level
+so I really hope you are understanding
+the flow till now, okay
+so now
+now that we have tested
+the pipeline, next is
+that now on step 7
+do application level testing
+here basically you are testing
+that your application, the downed
+solver is working properly or not
+so here
+there are many more metrics
+so one very important metric is
+correctness
+the answer that has come out
+is it correct or not
+you have to find out this
+then there is another metric
+which we call completeness
+completeness tells that
+given a question, is the answer
+completely
+answering that question or not
+suppose there are two parts in your question
+but the answer that you got
+is answering only one part and ignoring the other part
+so there is no completeness
+even though the answer of one part is correct
+but there is no completeness
+so we will check that too
+third, we will check style
+we will try
+that our
+campusx downed solver
+its explanation style is same
+which is of campusx teachers
+we will evaluate this also
+and you can do this
+so this also comes in application level
+evaluation
+so these are some quality related metrics
+apart from this, if you talk about application level
+then you will also
+test safety here
+you will check that your response
+is not toxic
+or you will check that your
+response is not giving any
+personally identifiable information
+you will check that
+your campusx downed solver
+can't be jailbreak
+so we will do these safety
+evaluations on step no.8
+on step no.8
+we will
+run safety evaluations
+on this application
+and lastly
+comes operations evaluations
+where you check 3 things
+primarily, your latency
+of the application, cost
+how much you are getting per query
+and how many tokens you are spending
+so this comes in step no.9
+we call this
+ops evaluations
+we will test this
+so
+this whole thing
+that I have told you
+component, pipeline and application
+these three levels
+that we are evaluating
+our whole application
+we call this in combined form
+eval suite
+this is like our entire
+testing suite
+whenever we want to test our application
+then we don't run just one test
+we run all these tests
+together
+then we get to know
+from every aspect
+is our application working right
+or not
+so we are going to do so many tests
+so many evaluations
+this will be our evaluation strategy
+so at this point I will take a break
+and I will take questions
+if you have any doubts
+you can ask, this is what we are going to do
+in the next 3-4 sessions
+but primarily we are going to do these things
+let me know if you have any questions
+guys
+any question till this point
+something like
+what you think I have missed
+what should have been
+for a rad chart bot
+or any other suggestion
+or any doubt
+are we going to generate golden data sets
+yes Amar
+there are many evals
+for which you will have to generate golden data sets
+some evals are also
+where you don't need golden data sets
+so
+you will know that
+in most of the cases
+you will need golden data sets
+and you will have to generate golden data sets
+so yeah
+the answer is yes
+any other question
+at this point
+ok
+ok, this question
+was a good reminder
+till now
+whatever classes we have done
+in that we were
+making evals, we were writing the code
+especially if you have seen the last lecture
+where we were
+running custom model evals
+you must have seen that we were writing our own code
+but we are not
+going to do that in this case
+if we write all this code ourselves
+then it will be a very big project
+instead what we will do is
+we will use a library
+which is called deep eval
+in deep eval
+if you go then you will see
+that from the discussions
+there are many metrics
+already exist
+like here
+if you go to rag
+then you will see answer relevancy, faithfulness
+contextual precision recall
+contextual relevancy
+all these things already exist
+then if you go to safety
+then toxicity
+PII leakage
+all these things already exist
+so instead of writing
+custom code to evaluate
+our rag application
+we will instead use this great library
+called deep eval
+which is the state of the art library
+most of the big companies
+use this library
+to do LLM based evaluations
+and the best part about this library is
+that it is based on
+the main library of python
+for software testing
+so if you have ever done software testing
+using PITest
+then this library will make you feel at home
+so we are going to use this library
+we are not going to use ragas
+because you can use both
+you can do all this in ragas
+and deep eval
+I am selecting deep eval
+particularly because of two reasons
+first is ragas we have already studied
+in the advanced rag course
+second
+deep eval is a broader library
+its scope
+is even more
+like agents where you can see here
+agents, multi turn chat bots
+non LLM applications
+image based applications
+for all kinds of things you can use deep eval
+so that is why its adoption is also more
+and there is a good chance that
+after a year or two
+this NLM evaluations
+will become
+a benchmark library
+it will become the standard
+so its a good strategy that we are focusing more on deep eval
+I really hope you don't have any problem with this
+yeah ragas is good
+obviously there is no problem with this
+as I have already told you two reasons
+we have already covered this
+and second deep eval is a better library
+in comparison to ragas
+so yeah
+any other question is point pin
+move forward
+okay
+okay
+okay
+now
+a very important discussion
+once you
+make such a eval suite
+which we have also made
+after that
+comes a very important task
+which we call regression
+testing
+after that we do
+regression testing
+what is regression testing?
+regression testing is basically
+the act of
+running
+your
+eval
+suite
+on your
+application
+till now what we are doing
+we are building our eval suite
+we are writing different
+evaluation codes
+for different different components
+and pipelines and applications
+once everything is done
+then when you run it
+on the whole application
+we call this regression testing
+the simple foundation of regression testing
+is that if your version
+one of the software is running
+now you have made version two
+of the same software
+so how do you know version two
+is objectively not
+worse than version one
+is my application worse
+how do I test if it is not
+better than version one
+this is the answer you get in regression testing
+so there is nothing special in regression testing
+basically the eval suite you have made
+you run it
+once
+and by running you get results
+you get a whole report
+that this is in this metric
+this is in this metric
+this is more than that
+so by running this whole regression testing
+you get a very clear picture
+so the new version of the software
+we have made
+is it objectively better than the previous version
+or not
+and on the basis of that
+we decide whether we will deploy
+the new version or not
+so I will explain it in simple words
+so what will happen
+step by step
+we will make a project folder
+in that project folder
+there will be a folder called src
+in which we will write our
+source code
+here will be our retriever file
+generator file, rag pipeline file
+we can use fast api
+to make api
+we can use streamlit
+to make ui
+so all this will be in src
+apart from that in our project folder
+there will be another folder called eval
+in which all our evaluation files will be
+so here you will have
+a retriever
+.py file
+or eval
+retriever.py file
+which will basically do this
+then you will have
+similarly another file
+which will be called
+eval
+generator.py
+in which we
+will write the code to evaluate it
+similarly you can understand
+a rag pipeline
+will have a different file
+an application
+will have a different file to test
+a different file for safety
+a different file for operations
+so basically all these files
+in the eval folder
+where we have written all our tests
+we call this
+our eval suite
+and then what will happen
+outside all the folders
+we will have
+a file which we will call
+run evals.py
+and what code will be written in this
+as soon as we
+trigger this file
+then what will this file do
+one by one
+all these tests
+will be
+run on our application
+and
+will generate a report
+and will give it
+and when you
+analyze that report
+then you will understand
+that your new version
+of the software
+is objectively better
+than the previous version
+your retriever file
+is telling that your new retriever
+is better than the previous one
+the new generator
+is telling that the new generator
+is better than the previous one
+and so on
+I guess you understand
+this is how you do regression
+testing. Is the concept of
+regression testing clear?
+what did we do step by step?
+we made an application
+in the process of making the application
+we built our eval suite
+in which we created multiple evaluation files
+and then to run all
+these evaluation files
+we have a single code
+which is run eval.py
+so whenever our application is complete
+or changes are done
+then we run this run eval.py file
+and it gives us
+a report
+that where does the new version
+stand in comparison to the previous one
+this helps us understand
+whether we should deploy the new version
+or not. Is everything clear?
+is it clear?
+simple right?
+nothing is too difficult here
+now
+now I want to explain one more thing
+here
+the discussion we will do now
+will be more in the
+LLM ops domain
+rather than
+just evaluation but I want to tell you
+because it is related
+so regression testing
+is very
+kind of advanced
+method
+what I told you is a very basic method
+that you just run this file
+what this file did
+compared all your metrics
+compared to the previous version
+and told whether the new version is better
+or not but in this
+many more things can be done
+what I will tell you
+the first thing is
+that in this
+you can do experiment
+tracking
+so if you have read ML ops
+then you might have heard about ML flow
+which we use
+to run multiple
+experiments on our application
+so here also you can do
+exactly the same thing
+so basically what you will do is
+that you built your application for the first time
+now
+you will have some settings
+right?
+for chunking
+how many characters you are using
+how much overlap
+how much temperature
+you are using
+some settings related to your embedding model
+so
+you have kept all these settings
+and you have run
+this eval suite
+for the first time
+so what this eval suite
+will do is
+for all the metrics
+it will give you some numbers
+for example
+your retriever
+recall
+came to 0.82
+and precision
+came to 0.68
+so in this way
+every metric will have some numbers
+so what you will do is
+the run you have done to your software
+and all the configuration numbers
+and the metrics numbers
+you will go and log them
+where? on ML flow like software
+so basically experiment 1
+these were the configuration values
+around that
+we got these metric values
+and what you will call this
+you will call this your baseline
+that when we run the software for the first time
+we got these readings
+after that you thought
+let's improve a little
+so to improve you went
+you increased the size of chunking
+reduced the size of overlapping
+and again
+you run it
+with the help of this file
+now for new settings
+new readings came
+so now you can go and log it
+so you can compare it
+visually
+you get a dashboard
+and on that dashboard
+you can compare
+every metric
+that how I ran it last 10 times
+so how this metric is going up and down
+so this regression testing
+is called experiment tracking
+and this part
+is called dashboarding
+so this
+basic level regression testing can also be done
+and if you want to make it more advanced
+then add an experiment tracker
+and a dashboard tool
+so it gets a little better
+infact you can make it better
+by adding
+CI to the mix
+CI stands for
+continuous integration
+so what you will do is
+that you will take a CI tool
+for example you
+took a github action
+and what you did
+you put
+some conditions
+there that as soon as you
+change anything in your code
+and push git
+suppose you changed the size
+of chunking value
+and pushed it
+so as soon as you changed the code
+you wrote this code in your CI
+that as soon as anything changes in the code
+then run eval
+again
+run eval suite again
+and as soon as it runs
+basically a new set of
+readings will come
+you will quickly compare
+those readings with the current baseline
+if
+your current reading
+is less than the baseline
+you will define a threshold
+that should not be less than 0.3
+suppose it is less
+so what you will do instantly
+you will pause your new deployment
+you will say
+that the new change that has been made
+I cannot deploy it
+because my current baseline
+is worse than that
+so the software
+is regressed, it is bad
+on the other hand if you
+changed the baseline a lot
+and your baseline improved
+then you will allow
+that now you get deployed
+so basically
+with the help of CI
+you can create a gating mechanism
+which will
+allow you to
+easily, without any tension
+change the software
+bring improvements in it
+and push it
+and deploy it
+and it will deploy only
+when your changes
+bring some positive
+impact on your current
+baseline otherwise it will
+be rejected so I really hope you
+understand how this whole thing
+is handled by an engineering team
+so you guys
+built an evaluation suite
+we are using that
+evaluation suite in regression
+testing as a gating
+mechanism I really hope you
+understand this all I will show you
+by the way CI
+I am not really sure if I can show you
+continuous integration or not but
+most likely Himanshu will show it to you
+because it will be taught to you in LLM Ops
+I could have skipped this topic
+but I thought since it is
+related so I will teach you once
+so is this point clear
+which I also said even if
+let's say if you don't know all this
+you have not studied in ML Ops
+in that case no problem you can ignore
+it
+then also you will understand things
+I have taught a little extra
+so on the basis of discussion
+so far
+our whole eval strategy is
+that we are building an eval suite
+on three levels and with the help of
+that eval suite we are doing regression
+testing now in regression testing
+we have discussed three levels first
+level simple regression testing
+where we are running the software
+once and bringing baseline numbers
+then every time
+running and bringing the next number
+and comparing manually
+with that we are understanding that
+our software is improving or not
+level number two you can automate it
+by adding a experiment tracking
+tool such as MLflow
+so now what are you doing
+every time you are triggering your eval pipeline
+every time according to your configuration settings
+the matrix value is getting logged
+and you can see it visually with the help
+of a dashboard so it got a little better
+and what is a better strategy than this
+that you use this whole thing
+for automation
+bring the CI tool in the picture
+and tell it that whenever
+I run my eval pipeline
+automatically test
+that my new version of the software
+is its matrix better
+than my baseline or not
+if it is better than the baseline
+then we will also do deployment
+and we will change our baseline to the new
+matrix and you do this continuously
+so this is how this entire thing is
+done
+so is it clear
+whatever we discussed so far
+Krishna is asking for these
+tracking we will use MLflow
+or LAMFuse
+honestly Krishna
+I don't have a plan right now
+to teach you experiment tracking
+or to teach you CI so the regression
+testing I will teach you will be
+first level where we will run
+those reports
+and we will show it in demand prompt
+and from there we will discuss whether it is better
+or bad
+so I am making it level 1
+Himanshu will make you level 2 and level 3
+that is
+part of the NLMops course
+I just taught it here
+by the way
+MLflow is not the only option
+you can use many more kinds of
+software for experiment tracking
+even the deep eval
+company software
+AI
+weights and biases
+software
+there are many players in this
+so the main idea is
+don't catch the tool, catch the concept
+so that if you understand the concept
+then you will learn it in a week
+because it is not necessary
+that we teach you MLflow here
+and send it to the company where you
+get a job MLflow is used there too
+it is not necessary
+no standard tool has been established
+for MLLms
+for machine learning yes
+MLflow has become the de facto standard
+here no standard has been established
+so focus on the concept
+is it clear
+whatever we discussed till now
+till regression testing
+is the concept clear?
+summary is
+after making the evaluation suite
+we will also do regression testing
+that will be
+part of our evaluation strategy
+regression testing
+not experiment tracking
+not CI
+ok
+now let's talk about the last step
+once
+now you have done
+your regression testing
+and you realized
+that the readings of the new version of the software
+its metrics
+are better than the baseline
+so what will you do now?
+now you will deploy
+that software
+right, deployment will be done
+but after deployment
+the evaluation does not stop
+I had taught you this
+and we are going to do the same thing here
+once the software is deployed
+even after that
+we will keep evaluating it
+and this evaluation is called
+online evaluation
+now what all things you will do here
+I will tell you quickly
+here you measure 3-4 things
+once the software is online
+you measure 3-4 things
+first you
+capture some things
+like
+every time when a student
+comes to our chatbot and asks doubts
+then to answer his question
+what is the latency
+how much is the cost
+did he give thumbs up
+or thumbs down
+you capture all these signals
+quickly write to me in the chat
+to do this whole thing
+which software can we use
+give me one software name
+which we can use, I have shown you in the past
+which software can we use for this work
+to collect these signals
+Lansmith
+Langgraph
+Langsmith is one option
+we also have Lansfuse
+in fact
+Confident AI also works
+we call it tracing
+or observability
+in the world of LLMs
+so basically what we will do
+we will add some
+tracking code in our code
+and by adding that tracking code
+we will capture all the interactions
+on our software when it is live
+all the interactions related data
+we will capture
+latency, cost, tokens, thumbs up
+thumbs down, all these things we will capture
+and all that we will see
+in one place in a dashboard
+which is Lansmith's dashboard
+apart from this
+we will also compute some other values
+these are captured values
+whatever is coming, we are storing it as it is coming
+but we will also capture some things
+like when our software
+is deployed
+online
+how is its faithfulness
+or how is its answer relevance
+or how is its correctness
+the things we tested offline
+the same things
+we test online
+so this is also our work
+after that we
+check drift
+drift basically means
+that over time our software
+performance is not getting bad
+I had told this in a lecture
+that we have
+a last 24 hours graph
+in that we are tracking some metric
+for example faithfulness
+so suddenly in the last 8 hours
+the curve of faithfulness is going down
+so this is a kind of
+drift which we are detecting
+and with that we do alerting
+and after alerting we improve it
+so you have to do this whole thing
+once the software
+is deployed
+after that we will do this
+and lastly there will be
+a self improving loop
+which basically means
+that sometime there will be a chat
+with a student
+where our software will misbehave
+our application will misbehave
+so we will pick up
+those specific instances
+and make our offline
+eval part
+our offline data set part
+so that our offline data set
+our golden data sets
+get more enriched
+so that when we make a new version in future
+and when we evaluate it offline
+then it
+can be evaluated better
+so that is why there is a loop
+here
+so this is how
+the entire
+evaluation strategy will be carried out
+this is what I have thought for you
+that we will make a rag application
+and we will make it at this level
+the whole page that you can see on the screen
+we will test it
+according to this
+so my
+plan of action is
+that in the next class
+I will
+teach you
+the complete component
+level evaluation
+which basically means that in the next class
+I will make you a retriever
+and then teach you to test the retriever
+then I will make a generator
+and then I will teach you to test the generator
+and in the same process
+you will do deep eval
+for the first time
+after that in the next session
+we will build a rag pipeline
+and we will
+run this rag
+triad
+three metrics
+after that
+third session
+or maybe it can be a little early
+I don't really know because
+I don't know how it will turn out in the future
+we will run the entire evaluation
+at the application level
+and fourth, the final session
+we will cover regression testing
+and online eval
+we will cover this
+so basically in the next four sessions
+the whole framework that we have made
+of testing a rag application
+we will practically
+carry out
+this is our road map
+of the four sessions
+I am not starting today because
+this whole thing is
+around two hours
+and I want to do this in two hours in one stretch
+I don't want to make you read
+one hour today and then one hour on Saturday
+the flow breaks down
+so I have kept today's class specifically
+to have this entire discussion
+by the way I think
+on the basis of today's session
+you can kind of
+tackle this question
+don't you think?
+do you think
+if someone asks you this question now
+how do you evaluate
+your rag chatbot
+will you be able to answer this question?
+think about it, it's very simple
+what you have to say is
+first I will build an evaluation suite
+that person will ask
+what is an evaluation suite
+you will say that I will test
+my application at three levels
+I will test it on the
+component level where I
+will test the retriever and generator
+tell me the name of the metrics
+then I will test it at the pipeline level
+tell me rag triad
+then I will test it at the application level
+correctness, completeness
+then I will test the safety and operation metrics
+and once this whole thing is done
+I will use all of these
+and do regression testing
+regression testing can also have three levels
+basic, experiment tracking
+CICD
+I will operate at one level
+according to my company
+and once the regression testing is done
+and I get a new baseline
+I will deploy it
+and even after deploying I will not stop
+I will run online evaluations
+what will you run online?
+and I will make the mistakes there
+and make my offline eval part
+trust me on this
+when you answer this
+in the interview
+then the other person will properly understand
+because there is nothing
+other than this rag evaluation
+this is the answer to this question
+what many people do
+I have taken the interviews myself
+so I can tell you when I ask the candidates
+when I ask many people how to evaluate
+the rag chatbot
+a lot of people don't know this answer
+because they have never read the evaluations
+the people who have read the evaluations
+the majority of the people answer this
+that we will check the recall
+we will check the precision
+we will check the answer relevance
+they take the name of 3-4 metrics
+and they think that is the answer
+but trust me there is a framework
+when you will answer it
+like a framework
+then the other person will give you respect
+that yes boss he knows
+he has done it
+so when you will practically do this
+in the next 4 sessions
+then it will be ingrained in your mind
+and that is the idea
+that in the next 4 sessions I have to create a resource
+so that when anyone
+wants to understand rag evaluation
+then he will understand by seeing these 4 lectures
+that is the whole idea
+so yeah
+we are ending this lecture on a promise
+that the next 4 lectures
+will be very interesting
+so that is all for today
+small session
+let me know what are your thoughts
+you will answer this question guys
+this one, I think you will answer it now
+I actually started speaking
+so I didn't pay attention
+do you feel you can answer better
+than your competition
+you are in a better place to answer this question
+ok
+so we will see this practically
+there can be some plus or minus
+which I have planned
+because I have not done it practically
+so there will be some improvisations
+but largely
+the framework we have discussed
+we will stick to this
+and you will see a better version of this
+in the Himanchu course
+so you are getting this treatment from both sides
+and once we cover this
+then we will move to the eval of agents
+which is a little more difficult
+and a little more tricky
+but again it will be fun
+so if you have any questions
+you can ask
+today's session is short
+so if you have any questions
+or doubts
+then you can go
+before that
+an important thing
+we have shared the last month's feedback form with you
+give us feedback
+if you have any complaints then write it
+I have promised you
+that your feedback is very important
+we have made many changes in your last feedback
+you must have seen it
+so if you have any questions
+then write it
+we have made many changes in your last feedback
+you must have seen it
+so going forward
+whatever is in our control we will definitely do
+so please use your
+feedback power
+if you feel that you need any improvement
+or any suggestion
+then send it to us without hesitation
+we will try our best
+we talk about how to improve this
+so trust me we need your feedback
+it's kind of
+it gives us direction
+so
+Harry
+it's the same
+4 more sessions will be
+on the rag eval
+and I think 4 more sessions will be
+on the agent eval
+so take 8 more sessions
+please take one certification
+session
+what is
+a certification?
+can you share resource and books
+if someone wants to deep down more
+Ravi I will be very honest
+this is a very new topic
+and at this point
+if there are books
+then there is no standard set
+that this book is very good for this topic
+so
+there is a good chance that what we are teaching you
+is the most in depth
+because we are actually taking a lot of time
+so if I get some good resource
+then I will definitely share
+but I don't have
+a single book in my mind
+I have seen multiple books on this topic
+but when I saw the books
+I was not convinced that I should
+recommend it
+so at this point I cannot recommend
+for someone who is acting as
+a BA for AI agents
+what is BA?
+is BA
+business analyst?
+even if you are a
+business analyst
+this is
+a good amount of depth
+for you
+for that matter
+for any professional
+this is a very good
+level of depth
+if you achieve this
+you are able to make eval systems
+it's more than enough
+honestly
+yeah Amir I have seen
+I will unmute you in a while
+I will take the chat questions
+I am getting a lot of praise for the notes
+we have actually
+Himanshu and Sufal are working on this
+they are building
+some new system
+this is the output
+once the system becomes stable
+we are testing it
+we will start making it for everyone
+we have available transcripts
+we will make it for everyone
+you will have to be patient
+azure AWS certifications
+or parul
+this is our goal
+teach you these conceptual things
+like LLM Ops, LLME evals
+system design
+after teaching all this
+we will work tool based
+we will teach things around this
+Sir, I think
+the interviewer
+in the book reading session
+he doesn't seem interactive
+Krishna I said the same thing
+those who are coming from the industry
+don't expect
+from them
+that they will teach like a teacher
+because that person has worked in the industry
+he doesn't have that much experience in teaching
+so extract as much as you can
+from that
+we are there to teach
+even if it seems boring
+extract his experience
+that would be my suggestion
+I am saying again and again
+if someone is coming from the industry
+you will expect
+from them
+it is not possible
+because that is not his main job
+so extract his experience
+that is important
+we are there to teach
+we will teach
+please suggest which certificate
+would help me stand out
+Sneha I always keep one stand
+I honestly feel
+certifications don't
+help you much
+unless it is a very new certification
+and it is getting very popular
+I don't know if there is a new certification
+of Claude
+not many people will have it
+but over time it will also saturate
+so certificates
+I personally don't find them very useful
+especially if there is a cost attached
+I would recommend not to do any kind
+of certifications
+but again
+a new certification is coming from
+an established company
+in which not many people have enrolled
+that could be a good certification
+so Claude I think could be a good certification
+right now in the AI age
+because Claude is a leading provider
+so that would be one option
+Shagul business analyst
+if you are a business analyst
+then this level of depth
+is a good amount of depth
+if you do this I don't think there will be
+more expectations from someone
+plus when you learn this
+then you will be able to understand
+more than this
+it is like you have a torch in your hand
+and you have to go ahead in the jungle
+and the light of the torch is 10 meters
+so it does not mean that you are restricted
+to 10 meters
+if you go ahead 10 meters
+then you go ahead 10 meters
+which basically means that if you are able to
+handle this level of depth
+then automatically your appetite to
+handle more depth increases
+so that will start happening automatically
+so don't think about what level you have to learn
+now what we are bringing for you
+understand that
+upgrade yourself automatically
+your horizon will expand
+you will be able to understand more
+see more, decode more
+where to find the feedback
+feedback, survey
+the first session
+in the whatsapp group
+whatsapp group is there so far I guess
+for deployment
+can there be any specific sessions
+we will do it in LLM ops
+it is not part of this course
+we will teach you deployment in LLM ops
+so the old videos
+we can generate transcripts
+with the help of AI tool
+actually we are doing it but it is a slow process
+so we are not promising it
+because if we promise it then you will be surprised
+that where are the notes
+so rather than surprise it is a better strategy
+that here it is done
+rather than promising upfront
+and then failing
+any other question guys
+I guess I have answered all the questions
+I was talking about unmuting someone
+prioritizing the system design course
+would be very helpful
+so I will tell you upfront
+what is my plan
+this course will be over
+after this we will do one more course
+which will be
+AI security and governance course
+which is now getting popular in the market
+it will be a shorter course
+it won't be that big
+it will be a shorter course
+once it happens
+I have completed a stretch
+of the whole thing
+right from the line chain to this point
+then I will teach you AI system design
+so there is a good chance
+that mid of October
+or maybe
+last of October
+we will start system design
+and complete it in November-December
+with system design
+our entire AI engineering track
+will be completed
+because context engineering
+we are going to provide
+LLM Ops, LLM evals
+we have taught agents in Langraph
+we will teach you how to make
+multi agent systems
+so we can conduct some workshop
+so basically we will cover this entire site
+and then from New Year
+our plan is to move to builder side
+so right from where we have left
+on the transformer
+we will start from there
+and then we will do LLM Ops
+builder side
+so that is our goal
+so you might feel a little frustrating
+that in what order we are covering
+how slowly we are doing
+but I have always had two goals
+first is that
+the upper level plan
+which I had made a roadmap
+at the beginning of this year
+I have to complete it
+I am completing it bit by bit
+me along with my colleagues
+we should not be slow
+even if we are slow
+these are the two philosophies we are following
+and I can totally understand
+if you are relying on our courses
+or playlists
+then you might feel the speed is frustrating
+but I will be honest
+sometimes I literally
+intentionally slow it down
+because I feel that I am not getting complete control
+on this topic
+I mean I can deliver it
+on 70% but I stall it
+or I don't take today's class
+because I need more time
+I need more clarity
+that is why it slows down a little bit
+but the goal is always that
+if something comes from our side
+then it should fit in your mind
+so sorry if we disappoint you
+but
+our intention is very pure
+I can tell you that
+yeah yeah I know
+all the interviews are focusing on that
+project will be very helpful
+yeah project is also
+in the pipeline
+we will make a complete course
+which will have 4-5 projects on gen.ai systems
+so we have to do that
+I will not take that
+Ajay will do that but yeah
+sir I am a web developer
+so can I directly start
+landchain for AI engineering role or MLDL
+no you can start directly
+no need for MLDL
+you can see my playlist
+it will come in the next class
+can we have a deep dive on deep agent in between
+I mean I can try
+but I am not completely
+convinced about deep
+agents right now
+that is why I am giving it some time
+so once that window gets completed
+in my mind then I will take that topic
+it happens a little
+that it crosses a threshold
+that topic that yes universally
+it has been accepted that now everyone is
+following the concept
+so then it is useful to teach it otherwise
+then it becomes a waste of effort
+someone
+was talking about unmuting
+who asked to unmute
+I forgot the name
+Amar is it Amar
+Amar jeet
+what is happening here
+raise your hand again
+Amar
+then I
+yeah
+speak
+you can speak
+I have two questions
+first
+let's say if we are experimenting
+we have to start again
+sorry I couldn't hear the question from the beginning
+I have two questions
+first question is
+how do we generate embedding
+for a particular document
+let's say the chunk size overlapping
+can we version that
+let's say if I am experimenting
+I can change my embedding two or three times
+but in ten experiments
+I want to use the setting
+of two or three embedding
+so rather than
+burn my costing on embedding
+or if I want to
+do caching
+embedding
+let's say
+the chunk size of 1000
+overlap of 50
+one setting is my embedding
+and I am using a model of Olamas
+so I am using it for embedding
+so you want to save your embedding cost
+yes sir
+I understood your point
+let me tell you the answer
+in the next class
+by finding the exact solution
+and the second question
+yes tell
+answer second
+there was a second request sir
+if you can teach this course
+like py test
+and asynchronous programming
+so that will be
+helpful in the
+product
+we have already studied py test
+if you go to python course
+you have 40 courses
+and one of them is python
+in advanced python
+section
+we have studied py test
+Hemanshu have you studied py test
+yes
+we have studied async await
+but
+I can tell you the upfront of async await
+how is async await
+that it should be a proper course
+otherwise it can't be understood
+by watching one video or two videos
+that is the topic
+I thought of making a course in between
+but it is like hardcore software
+engineering topic
+so there
+I couldn't make it because I didn't have time
+but there are a lot of things to cover
+so we will cover it
+it might take 8 to 10 hours
+so we have
+some videos and some online
+from good youtube channels
+we have explained async await in python
+understand the basic concept
+don't try to understand it at the code level
+unless you are a software developer
+and you want to go for interviews
+the code will be generated
+you should know the concept
+when you need async
+that is the main thing
+so it will take a lot of time and effort
+it is a difficult topic
+in software programming
+unless you are directly required
+that will be my suggestion for now
+rest of the things
+you will get access
+we have it in our course
+we have it in online youtube
+chat gpt cloud
+yes
+kori shafur
+has a good video
+but I saw it a couple of times
+I couldn't control it
+any other question?
+any other question?
+neo4j semantic layer is also
+hyping in the industry
+yes, it is the same
+look at tools
+any provider
+is on the rise
+and if it is operating in an adjacent domain
+it will definitely
+bring its own solution in the market
+and this is happening
+every leading player
+in the MLDL domain
+or in the software
+it is bringing something of its own
+tooling
+now it is difficult to do everything
+because mostly the concept is same
+you
+evaluation, tracing, observability
+monitoring, alerting
+these are the domains
+so we want you
+to understand things in a conceptual level
+so that tomorrow
+if you read some documentation
+or watch a video
+you will understand
+that is the main idea
+to prepare you conceptually
+fundamentally
+because today is there, tomorrow will not be there
+nobody knows
+people are mostly using async functions
+yeah, obviously it is true
+this is what you have to do
+I will give you a simple example
+you are running an evaluation on your software
+let's say you have deployed
+and you have to do
+online evaluations
+so you will have to run
+online evaluations in asynchronous
+if you run it in synchronous
+then the latency of your app will increase
+because now you have to give a chat response
+but if you have done it in synchronous
+then you have to evaluate it
+you have to log it somewhere
+so that's why evaluations
+tracing, all that is asynchronous
+so asynchronous is a very important
+aspect of programming
+so you have to learn
+it is a good thing but it is a difficult concept
+it takes time to understand and teach
+that is why I said that understand basic level
+syntax and understand where
+the usage is
+the rest of the code is generated
+nobody is writing from today
+so there should be some building
+if understanding is there
+that is good enough
+will we have some classes on multi-agent
+architectures
+yes, we are planning to conduct one workshop
+kind of setup
+by the way, we are conducting a workshop this month
+you might have seen the schedule
+we are conducting a workshop on
+building voice AI agents
+so we have thought
+that we can pick a topic like this
+and teach you
+we are conducting a workshop on voice AI agents
+next month we can conduct a workshop
+on multi-agent architecture
+that is also a bit out of date
+we will teach you that too
+I have not worked on
+graph databases
+or knowledge bases
+till now, I am very interested
+in learning about
+the applications
+that are available
+so I am going to
+teach you the
+basic code of
+the application
+that is the basic code
+that is the basic code
+that is the basic code
+I am very interested
+but unfortunately
+I have not been able to do work on it
+so I will ask
+Himanshu and Ajay
+if they have worked on a graph database
+or knowledge database
+they will be able to guide you
+Himanshu is saying
+that graph rag
+was covered in advance rag
+so from there you can get some idea
+most likely you will be building graph rag
+I guess
+but yes, it is a very interesting thing
+there are many applications
+that
+can be represented in the form of
+graph even in gen AI
+ok then guys
+I guess that's it for
+today, in the next class
+we will start rag evaluation
+this is the common
+we will start from exactly
+the same, the whole side is
+on the transformer
+so we will start from exactly the same
+decoder only, encoder only, encoder decoder only
+we will discuss the whole era
+and after that we will
+start your
+tokenization, data curation
+pre-training, fine
+tuning, alignment, that will be the whole track
+so we will do that next year
+we will cover
+the two years
+that you have with us
+most likely
+are we covering clip
+we will cover clip too but once
+my plan is
+to cover LLMs then
+we will go to LMMs
+large multimodal models
+so
+we will not cover multimodal in the beginning
+we will do the textual one only
+one iteration will happen
+then we will do multimodal
+sir if possible
+can we have a session on async
+await that will give us confidence in using it in life
+ok I will try
+but I will be very honest
+in two hours you will not be able to learn it properly
+it will need more
+because you will have to come
+from a very long time, multitasking, multiprocessing
+all those concepts will have to be picked
+from there it will have to be built
+I had made a curriculum
+about 6 months ago
+for async await
+and in that I had
+created a very good progression
+from where to start
+what to read, on the first principle basis
+but then that course
+could not manifest
+so what I can do is
+maybe I can arrange a session
+I myself
+want to teach
+but again on the same priority basis
+we are operating
+ok
+any other question
+with the
+storytelling
+you have to learn
+like data storytelling
+or what
+data storytelling
+data storytelling
+yeah
+for that you will have to come up with a project
+yeah that is correct
+data storytelling
+as you go to the business side
+there is a lot of demand for data storytelling
+I can totally understand
+many of my friends also tell me
+that when they
+better present
+the narrative
+of what is going on in data
+then people get impressed
+and then they take a different trajectory
+of their career
+so yeah that is true
+I don't know maybe
+we can have one session around that
+but that is it, out of all these topics
+priority is coming down
+because most of the people
+they are like a younger
+population
+1-3-5 years of experience level
+but yeah as you go
+to the business side
+data storytelling becomes huge
+we will try
+ok guys
+so we will close the session
+and see you on saturday
+first rag eval lecture
+ok
+so yeah good night
+let's meet on saturday
+bye

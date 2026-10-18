@@ -1,0 +1,3654 @@
+Hi guys, good evening.
+So we will start in two minutes.
+If you have any question, you can ask.
+Good evening everyone.
+Are you guys attending other live classes?
+How is it going?
+Gen AI interview preparation is going on.
+I guess two sessions are going on.
+Is it good? Is it benefiting?
+It was good but overwhelming.
+See if you are a beginner, then it can be overwhelming.
+In that case, you can always go and watch the recording.
+Because it can happen in a live session, there is a flow.
+Teacher is also teaching at a certain pace.
+So it can happen that you find it a little difficult.
+In that case, you can always go back.
+One more thing you always remember that
+Because the people who are coming from the industry and teaching you,
+They are not teachers, which basically means that
+They have not done the teaching work.
+So you can't expect anything from them that you expect from a teacher.
+So whenever there will be such sessions going forward,
+So if someone comes from the industry, he will share his experience with you.
+As a student, you will have to put in some extra effort.
+Because he will not be able to do the teaching work so well.
+Because he has not done it generally.
+So you have to be on your toes basically in those sessions.
+That's the main idea.
+I got some feedback.
+I had conveyed to Varun.
+So hopefully tomorrow's session will be better than the previous session.
+Any other question before we start?
+We will start in like two minutes.
+Let's wait a little longer.
+Some people are still joining.
+The other classes are going well.
+I guess there are 12-13 sessions in LLM Ops.
+Someone is doing a course here.
+Is that okay?
+Okay.
+And what about the other one?
+AI Pulse sessions.
+Which basically we are doing around current updates.
+Ajay is doing the session.
+How is that looking?
+Okay.
+So I guess most of the people here are liking the things.
+We will get feedback from other people.
+One metric that I have is that the insiders program has a refund rate of 0.
+Like literally no one asked for refund.
+Which basically means that people are liking it.
+This is a direct metric.
+At least in EdTech.
+It helps us understand whether people are liking things or not.
+I just hope that this continues.
+One thing that can happen is that I personally feel that there are too many classes.
+There are 22-23 classes in a month.
+So there can be some fatigue in the coming months.
+What can we do?
+There is demand from your side.
+We are getting classes to fulfill that.
+There are so many subjects.
+We have to teach so many things that the number of classes is increasing.
+So we will talk about that too.
+If you feel that the frequency of classes is very overwhelming.
+In that case, we can trim that too.
+It will only cause a loss that our speed will be reduced.
+So again, it's a trade-off.
+We will discuss that.
+Hardik, we mostly do that.
+We always share resources while teaching.
+We don't give assignments because personally I feel that...
+First of all, you are a college student.
+But you are not a school student who needs homework.
+You are smart enough to understand that if I have studied something, then it is important to apply it.
+So you will take out assignments around your work.
+But if you want us to start giving assignments.
+So again, I can have a talk with my team.
+And then going forward, what we can do is we can also provide you assignments based on the session.
+So let's see.
+Is there any system design course?
+Tarun, not at this point.
+But there is a plan.
+In the next two months, we will launch the course of system design.
+So okay.
+I guess there are no more questions.
+Let's start the session.
+Is it possible to get LLM local deployment and agent development in local machine?
+Yeah, it's possible.
+The only problem is you need good hardware.
+Means 32 GB type.
+You will need RAM at least.
+To actually have good output.
+Is it possible to share what's coming up in the next two, three months for classes?
+Doesn't need exact dates.
+Just a general idea of what's ahead.
+So Niti, as I said, mostly our entire effort is going to be around completing the AI engineer track.
+Which we have started and are still continuing.
+We will try to complete it by the end of this year.
+So whatever is left, like the course of context engineering, the course of AI security, the course of Gen AI system design.
+So we are going to work around these courses in the next two, three months.
+AI ops has been generic, but if you specifically talk about the AI engineering track, then we are getting you LLM ops.
+So the subset of AI ops is being covered here.
+Okay, let me share the screen guys and let's start the session.
+Thank you Aman.
+Krishna, when we will teach Gen AI system design, then the system design of agent AI will automatically come.
+Because agent AI systems are also a subset of Gen AI systems.
+So both will be covered.
+Don't worry about that. Your agents will not be taught to you.
+We will teach you agents in this course too.
+This current course and LLM ops will also be taught.
+So agents will be covered everywhere. Don't worry.
+Is my screen visible?
+Is my screen visible?
+Please give me a thumbs up.
+Okay.
+So guys, as I promised you in the last class, we have read a lot of theory in this course.
+Now going forward, we have to do everything practically.
+So all our sessions will be like hands on sessions from today's session.
+And the good thing is that since you have read the theory in depth, you have taken a very good overview of the landscape.
+So you will be able to appreciate the theory a little more.
+So what I will do is first of all quickly I will give you a recap of what we have done so far.
+It will hardly take three to four minutes.
+Then I will tell you the agenda of today's class and then we will start today's class.
+So our course of LLM evals, we established in the first one or two sessions that there are two types of LLM evals.
+One is model evals and one is application evals.
+And I told you that in the beginning we were more focused on the application.
+So we will start today's class.
+And I told you that in the beginning we will focus more on application evals.
+But before that we will read a little model evals.
+Then we started focusing on model evals.
+I told you again very early on that there are two types of model evals.
+One is benchmarks, with the help of which you can test very specific LLM capabilities.
+Knowledge, reasoning, maths.
+So to check these things, there are some generic data sets, benchmarks, with the help of which you do these evaluations.
+But at the same time, if you want to measure the performance of LLM for your custom application, then you have to run custom model evals for it.
+Basically, you run LLMs on your data, on your application and you understand which is the best model for your application.
+Let's say you are building a chart board for your company.
+Obviously, to build that chart board, you need a brain as in LLM.
+But how will you select that LLM?
+Simply by looking at the benchmark, you will get top candidates that there are 4-5 good models in the market.
+But which one will be the best for your application from those 4-5 models?
+The answer to that question is custom model evals.
+So we are going to work on exactly this topic in today's session.
+Today, with the help of a case study, I will tell you about the best model evals.
+How do you get the answer to this question?
+Which is the best model for your application?
+This is the gist of today's class.
+So I have told you the recap and I have also told you the agenda of today's class.
+The agenda of today's class is in simple words.
+This is the agenda of today's class.
+So let me know if you have any doubts so far.
+If you don't have any doubts, then just give me a thumbs up and then we will start today's class.
+So let's start.
+So let's start.
+So let's start.
+So let's start.
+So let's start.
+So let's start.
+So let's start.
+So let's start today's session.
+Okay.
+Okay.
+So this is a very practical hands on kind of topic.
+So here I will not teach you theory.
+I will show you practically everything.
+And to do that, I felt that there should be a good case study, a good problem statement.
+So I explored a lot of problem statements.
+I am keeping the best problem statement that I found
+So how many of you are cricket lovers?
+Like you watch cricket, you follow cricket
+How many people are like this?
+Since this class is happening in India, I am pretty sure a lot of you will be like
+Yes, I follow cricket
+So if you follow cricket, then you might have seen this website as well
+ESPN Crickinfo
+This is like one of the top websites that is used to check live cricket scores
+I personally do it too, I have been doing it for years
+There will be many more users of this, so this is a proper big website
+Now what is there in this website is that when the match is going on
+Then people send their questions
+They also comment, they do textual commentary
+And in between, they also take questions of the users and answer them
+So the problem is that since this website works at a big scale
+A lot of people follow their feed
+So the problem is that sometimes the number of questions they get
+Their scale is very high
+Like literally in 5 minutes, 500 questions came
+And how do you get questions?
+Like the match is going on between India and Pakistan
+So suddenly someone will ask a question
+Tell me how is Virat Kohli's batting average against Pakistan?
+Or when India played Pakistan last time, how many wickets did Jaspreet Goomba take?
+Right, people ask simple questions
+And then they have a team, a commentary team
+Some analysts are sitting with them
+This is happening live by the way
+And the work of these analysts is that the commentary team gives them questions
+These analysts have the database of Crick Info
+They write a query on the spot
+And the commentary team gives the answer to the query
+And the commentary team puts it back in the feed
+And then tells them
+So Crick Info has been doing this for years
+But eventually they realized that this is not a very scalable method
+Because in matches like India vs Pakistan, the scale is very big
+That we can't answer everyone
+So what they thought
+What if we make a platform
+Or a feature on our website
+On which any cricket fan can ask any question related to cricket
+So they developed this feature
+And the name of this feature, if I remember correctly
+It is Ask Crick Info
+This is the feature
+During the match, they give the link of this feature
+And what you can do is
+You can select from here
+What you want to talk about
+Let's say you want to talk about IPL
+So you can simply go and ask here
+Who has scored most number of runs against Bumrah
+Let's say you asked like this
+Now what this system will do is
+Okay
+This system will take your English query
+And it will go back and convert it into a sequel
+So
+I am not being insulted, this is being insulted by Crick Info
+Simply ask who has scored the most runs
+Let's see if we can give the answer to this
+Let's see
+Okay
+I don't know, I checked last time
+Something is happening
+I don't know
+But you understand right
+What is happening in this feature
+You have made a system or feature
+Where you take a text based question
+And you give it to an LLM
+LLM knows this question
+And also knows the schema of your database
+That how your database is organized
+What columns are there
+On the basis of that
+This LLM generates a sequel and gives it to you
+Then your system takes that sequel
+And runs it on the database
+Whatever result comes
+We show the result back to the screen
+So basically we have finished the analyst
+That was needed
+And we have placed this system there
+And now this whole thing is scalable
+Because now it can handle any number of queries
+Unfortunately, it is not working during the demo
+But it is not my fault
+You can check after class
+So now our case study is
+That we have to assume
+That we are AI engineers
+Working for Crick Info
+And we have a feature request
+And we have been told that we have to make this system
+Now think for yourself
+Before making this system
+The first question
+The biggest question will come
+Obviously the biggest question will come
+That to make this system
+Which LLM should we use
+Because LLM is the brain
+Main work is doing this
+So we have to decide first
+Which LLM is the most suitable model
+For this application
+And as I have said previously
+You can't randomly say in your team
+Let's use Fable
+It is the top model now
+You don't talk like this in companies
+You have to give good input
+Reasoning
+Why you will select a model
+So there has to be proper evaluation done
+Before selecting the model
+I hope you are understanding the stakes
+So in today's class
+We are going to do exactly the same
+We are a team of AI engineers
+We are working at Crick Info
+We have to make a new feature
+And before making that feature
+First of all we have to decide
+Which model we will use
+To build this feature
+And to take this decision
+What we have to do
+We have to follow a process
+And during that process
+We will learn
+How can we run custom model evals
+On our own data
+To select a model
+So this is the entire premise
+Of this class
+Let me know if you have understood this far
+Is the problem statement clear
+What are we going to discuss going forward
+Is this clear
+We are going to build
+In technical terms
+We are going to build
+A text to SQL application
+But our goal in this class
+Is to select
+One test model
+Which will be the brain of this system
+This is the goal of our class today
+So let me know
+At this point
+So let me know at this point
+If you have any questions
+Then we will start our work
+We will start our analysis
+Let me know
+Let me open the chat
+So we assume that
+We have rag data pipeline
+In place
+This is not exactly
+Rag
+Because
+Here we are not
+Giving any external
+Documents to the model
+On the basis of which we have to answer it
+We are just providing the schema
+Of the database
+Which will be the same every time
+So we don't need to build a rag chat
+This is not a rag chat
+This is a text to SQL application
+Is it clear
+This is not a rag application
+So
+Let's start the discussion
+We will keep it a little interactive
+Because this session is planned in the same way
+That I will ask your input
+At many places
+And you tell me
+We are working together for this goal
+So
+Let me tell you the whole flow
+The journey of selecting the model
+How exactly will it work
+We will not start
+Directly run custom eval
+Do you remember the last session
+Where we learnt about LLM leaderboards
+Do you remember
+We will use LLM leaderboards
+In this whole selection process
+So let me tell you
+How the flow will be
+First of all
+Always
+The first thing that you will do is
+That you will understand the problem statement
+And then you will write down
+Your
+Requirements
+First of all when an AI engineering team
+Is given a task
+They write their requirements very clearly
+We will do that on stage 1
+On stage 2
+We will pick those requirements
+And we will go to leaderboards
+And we will
+Shortlist
+5 to 10
+Candidate models
+I told you
+What is the work of LLM leaderboards
+Filteration, not selection
+So how will we know
+Which candidate models are there
+With the help of these leaderboards
+And once we have these 5-10
+Candidate models
+Then we will run
+A custom model
+Eval on
+All those 5-10
+Models and the model
+Which will score the best
+We will select that model
+So is the flow clear
+We will do all the work in 3 steps
+First we will write down our requirements
+We will take those requirements
+And go to leaderboards
+And
+We will select 5-10 candidate models
+Which will fulfill our criteria
+And then on those 5-10
+Models
+We will run
+Our custom model eval
+On our own data
+And there we will see
+Which is the best model
+Of all our candidate models
+And we will select that model
+To build our application
+This is the flow
+Is it clear
+Is it clear
+Ok
+Lets go guys
+Lets start
+First thing is
+To gather all the requirements
+So we will ask some key questions
+I will ask you
+And you will answer me
+Ok
+So quickly type me and tell me
+That exactly
+For which task
+Are we searching for the models
+What is the task
+At the technical level
+I have told you by the way
+We are actually building a
+Text to SQL application
+This is our task
+We need a model for this
+Next is a very important question
+You will ask
+Your product manager
+Or your engineering manager
+That cost
+What is ceiling
+Cost ceiling means
+How much
+Can we spend
+What do you think
+Is a good number
+Again this is not
+Strictly related to AI engineering
+But just wanted to see
+How your estimates are
+Lets say a website at the scale of
+ESPN crick info
+Which is seen and used all over the world
+We are adding a new feature
+So first of all you have to think
+That by adding this feature
+What is the benefit of crick info
+One benefit is
+That they used to be asked questions
+And they had to write
+Queries manually
+So they were not able to scale up
+So by making this system
+They will be able to scale up
+But at the same time you have to think
+That we
+Ask questions
+Why do we give them
+An answer
+Basically we started because
+You ask us questions and we will give you an answer
+What do you think is the reason
+They could have given a commentary
+To people
+Why did they say that you ask us questions and we will give you an answer
+The answer is hidden behind this
+That how much money you can spend on this
+It is very simple
+This is retention play
+Any website in the world
+What is their north star
+That the user
+Stayed on the website for the longest time
+So what happens is
+That these small things
+That you ask us questions and we will give you an answer
+So we will give you an answer
+Any record you ask
+This is also a kind of retention play
+They want you to stay on the website
+And the longer you stay on the website
+The more chances you have to see ads
+The more ads you see
+The more I will earn
+So in a way this feature
+Is helping me in increasing my revenue
+In generating
+So what do you think
+Could be a good number
+That I
+Can spend that much money on this feature
+If you are a
+Business developer
+For ESPN Crick Info
+You have been given
+To build this feature
+So what do you think, how much budget will you get
+Just randomly asking a question
+30 plus lakhs
+We are talking about per month budget
+What do you think is a good number
+How much you want to spend on this new feature
+I will see your number
+And then I will take out the average
+And say the wisdom of the crowd
+2 lakhs, 5 lakhs
+Let's keep it simple
+Because we don't have an answer
+So let's keep this number
+To be around
+Let's say 3 lakhs
+This is the cost ceiling
+It could be 5 lakhs or 10 lakhs
+We will not argue over this
+But we asked our business manager
+That
+How much money is being given to build this feature
+So business manager said
+You will be below 3 lakhs
+Everything is fine
+Don't cross 3 lakhs
+We have a guideline
+Now here is a very important
+Thing you have to understand
+That how much will be your expense
+That you have to take out
+As an AI engineer that is your task
+So first of all
+Let's understand that our
+Text to SQL
+SQL system
+How
+will this
+Burn money
+It is very simple
+You are using an LLM
+So LLM
+Charges you
+Per token basis
+This is your
+Cost, the biggest
+Other than this there will be more costs
+Deployment etc.
+We will not consider the cost of deployment
+As the application is already running
+So we are integrating this feature
+So the deployment cost will not increase
+So mainly our cost
+Is the cost of LLM
+Considering we are using a paid
+API, open AI, anthropic type
+So here we will do a calculation
+Quickly
+So what will happen in this whole system
+That your application
+Your user
+Will send you a text
+Like he asked
+How many runs has Virat Kohli
+Scored in the IPL
+This is the question
+Now what you have to do is
+Send this question to LLM
+And this LLM will generate a SQL
+And that is all LLM has to do
+So let's try to
+Calculate
+How much will be our cost around LLM
+So what you do
+First of all you don't send this text
+To LLM
+What you will do first
+You will pick up this text
+And create a prompt with it
+Right
+How will that prompt look like
+I will show you
+So this is the prompt
+Which we are sending to LLM
+We will read it very carefully
+This is our system prompt
+This exact thing we are going to send
+To LLM
+You are a text to SQL generator
+Given a database schema
+We will provide our database schema
+So that you can understand what SQL query you want to write
+Given a database schema and a question
+Return a single
+SQL query that answers it
+Using SQLite syntax
+Because currently the database
+Which we are using in today's class
+Is SQLite
+You can use anything like oscray or mysql
+Return only the SQL query
+I don't need any other explanation
+From LLM
+You simply give me SQL query
+Now look here
+I have provided the schema here
+So apparently
+The current schema I have
+There are two tables in it
+One is matches
+By the way, we are operating in IPL domain
+Because there are many other things in cricket
+International T20
+International test matches
+Women's and men's matches
+So we are narrowing the domain and focusing only on IPL
+Imagine that
+We are launching this text to SQL system during IPL
+So we have a table called matches
+In which all the records of a particular IPL match are available
+Which match was played between two teams
+Which match was played on the ground
+Which match was played on the date
+All these things like umpire
+And one more table
+We have deliveries
+Where we have
+Ball by ball data of every match
+So in one T20 match
+There are 240 balls
+240 balls
+40 overs match
+So what happened on every ball
+That is the data
+Who was the batsman on every ball
+Who was the bowler
+Who was out
+All these details are here
+So I have sent my schema
+And below
+The question that the user asked
+I have put that here
+I have put this question here
+And the question is very complex
+Which bowler has the best economy rate
+Among bowlers who have bowled at least
+500 legal balls
+It is a very complex question
+And I have asked to generate SQL
+So this is my prompt
+I will send this to LLM
+And LLM will give me this output
+Okay
+I am getting this output by flipping
+This is my input
+And this is my output
+By the way LLM charges us
+For every LLM provider
+You will get two rates
+Whenever you go to any LLM provider
+Like if you go to Anthropic
+Then every LLM provider
+You will get the rate of input tokens
+And you will get the rate of output tokens
+Obviously output tokens
+Are more costly than input tokens
+Okay
+So first of all we will see
+How many tokens we are sending
+In every request
+So what I will do is
+Again, the length will vary
+Because all this will be the same
+This whole thing
+The system prompt written above
+And this schema
+This is the same
+What will vary is the question below
+But there won't be much difference
+So what I will do is
+I will quickly copy this
+Entire input prompt
+And I will go to
+Some website
+Which can help me
+Calculate how many tokens
+Are in my input prompt
+So what I will do is
+I will simply paste it
+And you can see
+It is telling us that we can get 352 tokens
+Here are the tokens
+LLMs will see the input like this
+So roughly if we
+So if we
+Let's
+Simplify this
+Instead of 350
+Let's say 400
+So how much is the cost of our inputs
+400 tokens
+And how much is the cost of the output
+For that what we will do is
+We will hold this query
+And paste it as well
+So this is
+Around 100
+So again
+The length of every query
+Won't be the same, let's just assume that
+On average
+We are asking for 100 tokens output
+So basically whenever we
+Are asking for one request on our LLM
+We are sending it 400
+Tokens
+And
+It is giving us 100 tokens
+Now here one more important number is very important
+You should know that
+That on an average
+Daily
+How many
+Questions
+Can be asked
+How many times
+People will open this website during a match
+And type the question here
+And send it to you, this number is also important
+To calculate the cost
+Again I need your help, what do you think
+A website like
+Crickinfo
+That operates at the world level
+So if we launch this feature
+What do you think, in one day
+How many questions
+Can we get to answer
+According to you, again just a rough estimate
+I will try to
+Do the average
+1 to 2 crore is too much
+We are just talking about
+This particular feature, we are not talking about
+The website, we are not talking about the home page
+There is a match going on
+Inside the home page, this feature is hidden
+What do you think
+How many people will follow the match
+And after following the match, they will go to this feature
+And type the question
+And you do it, I have never done it honestly
+So
+Again, some people are saying
+Very crazy numbers
+Like 1 to 2 crore, not that many people watch cricket
+Let me tell you
+My cricket
+Knowledge, what do I think
+I think first of all
+It will be spiky
+If you plot a graph
+Where 1 to 365 days
+Are there
+And you plot how many questions
+If you ask questions, it will be very spiky
+Can you tell me
+What are the spikes
+Spikes are coming according to you
+The important matches
+In those days, spikes are coming
+Like this is a match of Chennai
+So more questions can be asked
+You understand, right? CSK vs MI
+More questions, it will be spiky
+But if we want to make an average
+Then for a while
+We will agree, this is my gut feeling
+So I will say
+It is possible that on an average
+On a daily basis
+We will answer 50,000 questions
+Now you can argue with this
+And it is possible that I am wrong
+But for this class we are assuming
+That we are going to
+Answer 50 questions daily
+50 questions daily
+So if we
+Summarize on numbers
+So we have 400
+Input tokens
+And 100
+Output tokens
+And
+This is a question
+And how many questions
+Are we going to answer daily
+50,000
+And then we will multiply it by 30
+Why will we multiply it by 30
+Someone tell me quickly
+It is a simple question
+Because we have to
+Take out the cost per month
+We will multiply it by a magic number
+Which is 95
+Can anyone tell me what is the magic number
+Come on
+No man
+This is USD to
+INR conversion
+Because here the rate is in dollars
+See
+The rate is in dollars
+So we need it in rupees
+Because we have set our budget to 3 lakhs
+So now let us check
+That can we afford
+Claude fabel 5
+Or not
+Because our
+Newest intern said that use fabel
+It is a very nice model
+So let us calculate it and tell
+See quickly here
+What is the input cost of fabel
+Input cost is
+10 USD
+Per million tokens
+It is about input
+And how much is the output
+Output is 50 dollars
+Per million tokens
+So now we are going to do the exact calculation
+That if we use Claude fabel
+Then what will be our monthly cost
+Okay, see carefully
+First we
+Will take out the cost per query
+What is the cost of answering
+One question
+So input
+Is 10
+Divided by 10 lakhs
+Multiplied by
+How much are our input tokens
+400 plus
+50 by
+10 lakhs
+Help me in doing a quick math
+Okay, and our
+Output token is
+So 3 zeros
+Are here, 3 zeros are here
+So we have 1000 below
+And above
+4 plus 5
+Is it correct
+Or am I doing some mistake
+4 divided by
+1000 plus
+5 divided by 1000
+So this is 0.009
+USD
+Per query
+Is it correct
+Is it correct
+This is one query
+How many queries are we getting
+Per day
+So we will multiply this number
+With 50,000
+So this number will become
+Or 3 zeros
+Basically
+250 dollars
+We are spending
+250 USD daily
+And we have to do this
+For 30 days
+Now I can do more calculations
+By hand
+This will be
+7500 USD
+Did I do something wrong
+Oh sorry
+Oh my bad
+I did wrong
+9 into 5 is 45
+Or
+450 is done
+450 USD
+Is it correct
+And if it is 450 daily
+Then how much will it be monthly
+450 multiplied by 30
+So this would be
+Is this the right number
+Is this the right number
+And now we have to multiply this
+And now we have to multiply this
+From 95
+To get a number
+I think this is around 10-12 lakhs
+Right
+Multiplied by 95
+This is the cost
+12.8
+Lakhs
+Per month
+Now you tell me
+Can we use Fable
+Our budget
+Was 3 lakhs
+12 lakhs
+Is exceeding 4x
+So clearly we are understanding
+That
+This is beyond our standard
+We have to go down
+Down means somewhere here
+Basically we have to go somewhere on 1 4th
+Somewhere like
+5 on it
+It seems right
+I think it will just fall in our budget
+I hope you are understanding
+So first let me know
+This discussion
+Around cost
+Is this discussion clear
+Is it clear or
+Any question
+This is how you do
+Calculation, this is how you gather
+Requirements
+Now here
+I am teaching an interesting thing
+I could have skipped honestly
+Because we will detour a little
+But
+Notice one thing
+This is what you are seeing
+5 million
+Cash rides
+Not 5 million
+5 minute cash rides
+1 hour cash rides
+What is this number
+Let's understand this
+This is a very interesting thing
+So has anyone
+Heard this term
+There is a term
+Which we call
+Prompt
+Cashing
+Does anyone know what this is
+Or have you ever heard of it
+I guess you have heard of it
+Let me tell you what it is
+The simple funda of prompt cash is
+That
+It is possible that the prompt
+That you are sending to LLM
+In that
+A lot of component of the prompt
+Is the same
+Across multiple queries
+Like in this particular case
+You can easily see
+That this part of the prompt
+This part of the prompt
+Is going to be
+The same for all the
+50,000 queries
+That you will answer during the entire day
+Change is just
+This part
+But the problem is
+The problem is
+That you are always
+Giving the model
+The same repetitive query
+Input money
+Obviously it's not
+Good
+So what these model providers say
+That we can give you
+The facility for cashing
+So what will happen
+That you take a portion of your prompt
+And cache it on our servers
+And for that
+You don't have to pay money
+In subsequent stages
+So basically
+What does it mean
+That suppose you have to
+Keep it on the server
+For 5 minutes
+Your
+Text
+So for 5 minutes
+You will have to pay
+$12.50
+Remember this is more than
+Normal input
+This time you are not only getting input
+You are also getting cache processing
+So these models will charge
+$12.50 from you
+For the first query
+The first question you will answer
+The first question
+For the first question
+You will not have to pay $10
+But $12.50 USD
+But
+Every subsequent
+Bar
+You will have to
+Pay $12.50
+For this much
+For this much
+You will have to pay only $1
+Instead of $10
+So now you can do the calculation
+In your head or you can use a copy
+You can easily figure out
+That your current number
+Will decrease
+The input one, the output one will still be the same
+But the input one will decrease
+For the remaining
+49,999
+Questions
+So it will be a significant reduction
+Here I would like to clear one more thing
+That what does 5 minutes cache
+And 1 hour cache write mean
+So what happens is
+5 minutes
+Cache means
+That you sent a question
+And you
+Stored it in the cache
+But your next
+Question
+Came after 7 minutes
+So your question
+Will be removed from the cache
+And for the second
+Question
+You will have to pay $12.50
+To store it in the cache again
+But let's say
+Your first question came just now
+And after 3 minutes
+The second question came
+So now you have to pay
+$1 because
+Your question is in the cache
+So basically it is a refresh
+Cycle
+So if you select this one
+It will refresh in every 5 minutes
+And will be removed from the cache
+So since we are ESPN
+Crick Info and we are answering
+50,000 questions
+So for us
+5 minutes is a good refresh cycle
+Because every 5 minutes
+My question will keep coming
+It might be that after 2 o'clock
+There might be no question
+For the next 3 hours
+So after that
+Our first query will come at 6 o'clock
+For that we will pay $1
+And will give $12.50 again
+And then we will start paying one by one
+If you had an application
+Which has less users
+Like you are expecting
+Only 1000 questions in a day
+Because your website is not that famous
+In that case you use
+One hour cache
+Writes
+In this your refresh cycle is
+So you just sent one
+Paid $20
+And within that one hour
+Another question came
+So for that it will cost $1
+If it comes after an hour
+Then you will pay this much again
+So I hope you understood all these numbers
+And if you have this question in your mind
+How does this internal caching work
+Then I can't teach you
+But I can guide you
+This whole thing works on a
+Concept called KVCash
+KVCashing is a very famous concept
+We will also study it in the future
+It is related to attention mechanism
+That K and V
+Vectors which are in the attention mechanism
+You can kind of cache them
+And because of that
+This whole optimization comes in the picture
+But whatever it is
+I had done these calculations
+If you were paying around
+12 lakhs to use Fable
+Then there is a good chance that you can
+Bring it to 6-7 lakhs
+With the help of this optimization
+You can actually save a lot of money
+If there is something in your prompt
+Which is always the same
+For example
+In making rag chart bot
+This thing won't work that much
+Because in rag chart bot
+There is a big part of your prompt
+Context
+And what is the context
+It changes in every query
+So prompt caching won't benefit you that much
+But here
+This prompt caching concept
+Can actually help you save a lot of money
+I hope this entire discussion is clear
+We are doing a very engineering discussion
+And
+I hope you are not getting bored
+So yeah, we are actually
+Right now discussing about the requirements
+We understood the task
+We are making text to SQL
+We understood the cost in detail
+How to calculate
+And plus we have our magic number
+That we have to keep it
+Within the amount of 10 lakhs
+We need this model
+So let me know if you have any question
+Where do we specify
+To use the cache
+In the API call obviously
+So someone is asking
+Without column description
+How can LLM understand
+What data has in the tables
+Few general tables
+But for specific to our project
+Srinivas again
+You have told us the schema
+And after that
+Describe the schema in your system prompt
+It's up to you
+Here actually it's very
+Descriptive
+So I didn't explain it
+But let's say my company has a personalized database
+Column names
+Are very domain specific
+Very technical
+So what I would do is
+I will add one more paragraph
+Where I will describe my every column
+That control is with me
+System prompt will be bigger
+I will have to pay more
+But again prompt caching can solve that problem
+I understand your point
+You can provide extra information as well
+Few questions are coming
+So let's take a small pause
+And let's discuss all the questions
+Even if we reduce the cost
+Of using Fable
+Will Haiku be enough for this kind of solution
+We will discuss all of them
+We are moving forward in the discussion
+Let's see which models will be useful
+Let's discuss
+Sir how does the database get updated
+In a live match
+Do they do it manually
+Or what
+A new ball was thrown
+Who hit it
+All this information is manually
+It is available in the database
+Scorers are available in this kind of website
+Whenever you see a match
+It is written there
+Who is the commentator and who is the scorer
+So the scorer does this manually
+So is there any other question
+Till here
+So Ali is asking
+Will reasoning capability of a model
+Be involved in text to SQL
+So it depends on you
+Reasoning
+Basically
+It is a setting
+You can turn on the reasoning capability
+So it depends on you
+What kind of query you are getting
+Maybe you can put another LLM
+Whose work will be to understand complexity
+And on the basis of complexity
+They do routing
+That simple question is asked
+So send it to such a model
+Who is not doing reasoning
+And if it is too complex
+Send it to the reasoning person
+But again the problem with reasoning
+Is that latency increases
+Because he thinks first and then answers
+So yeah
+We can do a lot of discussion
+Teams do it actually
+The questions you are asking
+Are asked in the meeting room
+But again we have to draw a line
+Because this is a 2 hour long session
+So we have to do things
+But yeah good question
+So yeah
+Move forward
+Move forward guys
+Okay
+Can we get
+Dynamically peak hours and
+Low hours query traffic base
+Sorry Srinivas
+I didn't understand your question
+Let's see
+Next question is latency
+Latency is also a very important
+Concentration, you should know
+That the application you are making
+What kind of latency will work
+For example if you are making
+A research assistant
+Whose work is to go on the internet
+And provide information and research
+So there latency
+Is not a big consideration
+But what do you think about this application
+Where people will go on this website
+And ask questions
+During a live match because
+They have curiosity
+Is it a
+Latency is a consideration
+Or not
+I guess you are able to understand
+Latency matters here
+What do you think is a good
+Number in terms of seconds
+That it shouldn't be more than this
+If I get the answer in this
+Then as a user
+I will have no complaints
+I think 5 seconds is more
+Many people are saying 5 seconds
+But I think if it takes 2-3 seconds
+It's a good number
+In 3 seconds
+Our OCD gets triggered
+That nothing is happening
+Something is wrong, our money will be cut
+Something like this happens with us
+So let's keep it 2-3 seconds
+But yeah this is an application
+Where latency matters
+Here you can't
+Pick up a model like this
+Which has a very high latency
+Or you can't pick up a reasoning model
+Which spends a lot of time on reasoning
+And then answers
+You have to understand this
+So this is also a consideration
+The next thing is context
+The limit of the context
+Shouldn't be a breach
+What do you think
+For this application
+Does context matter
+Or not
+It's a good question
+I am not going to answer it but I am expecting
+Correct answers from you
+What do you think, does context matter
+That how big is the context window
+I guess you are able to understand
+Here context
+Doesn't matter much
+Because the context won't be big
+The user will come and ask a question
+Then the next question
+Is a disjoint question
+It has no relation with the previous question
+We are not having a conversation
+There is no multi-turn conversation
+It won't be big
+So here context is not a big consideration
+But if you were making a chart board
+Then context matters
+If you were making a coding assistant
+Then context matters
+For this application context does not matter
+Because there is no user session
+There is no multi-turn conversation
+I guess you are understanding my point
+If we talk from the deployment point of view
+Here basically
+We are asking this question
+Should we keep open source model
+Because it is a privacy issue
+Or we can use public APIs
+Such as OpenAI and Anthropic
+What do you think
+Here you can see a consideration
+That no, no we have to have our own
+On-prem servers
+We will put them there
+Or we can only keep open source models
+No, there is no such consideration
+We are not dealing with such data
+Where we feel
+That it should only be on our servers
+So we are open to public APIs
+We can easily use
+Anthropic, Cloud
+I am sorry, Anthropic, OpenAI
+All these APIs
+Can be easily used
+Last question
+Correctness
+Being correct
+Being accurate
+How important is it for this application
+According to you
+Again
+It is very simple and logical
+It is very important because
+Cricket fans will come
+Cricket fans are super finicky
+About the records
+Here I said who has scored the most
+Number of runs in IPL
+Justpreet Bumrah came by mistake
+So a screenshot will come
+And it will be posted on Instagram and Twitter
+And I will be insulted
+For the ESPN Crick Info
+So here correctness matters a lot
+You cannot be
+Incorrect or you cannot hallucinate
+So that is a quality
+Which you have to check very well
+And how will this quality be checked
+You will check on leaderboards
+That is the coding
+Is this model able to do it or not
+Because SQL generating is like a coding task
+Also with the help of your custom eval
+You will figure out
+That on your data, on your task
+The correctness or accuracy of the model
+Is how good
+So can we summarize our entire discussion
+Till now we are building a
+Text to SQL application
+The ceiling of cost is given
+3 lakh rupees per month
+We have to operate below that
+Latency should not be greater than 2-3 seconds
+Context window doesn't matter much
+We can select a model
+Which context window is very small
+Then also there will be no problem
+Deployment is not a preference
+In fact we will prefer public APIs more
+Because public APIs infrastructure
+And reliability, robustness
+Is much better
+If I use the anthropic API today
+And build my application
+There is a good chance that API will never be down
+If I will set up my own
+Then it is possible that I will need a very technical team
+And after that it will not be reliable
+You understand right
+And correctness matters a lot
+Because we are dealing with cricket fans
+Who are super finicky
+If something looks wrong, we will take a photo
+And put it in the market
+So yeah, these are our core requirements
+And we reached this conclusion
+On the basis of this discussion
+So is it clear
+After this discussion
+Do you feel you are in a better
+Mental state
+To actually go out and explore
+Leaderboards
+You will not do it like this
+That you will look at the first model and say
+Yes, we will use this
+No, now you will feel more literate
+Because you have your requirements in your hand
+So this is the main goal of this step
+Which we discussed in the last class
+Okay, let's take some questions quickly
+Then we will move ahead
+Then we will move ahead
+You cannot get everything
+If you use a model
+Which does a solid reasoning and then gives the answer
+Then the answers will come slow
+If you use a model
+Which gives the answer directly without doing much reasoning
+Then the answers will come soon
+But you may be disturbed by complex queries
+So again it's a trade-off
+Which you have to think
+How do you handle
+I have told you the solution
+That you can come and sit in front of an LLM
+And with that you can make a decision
+The question is whether the query is complex or simple
+If it is complex
+Then send it to the reasoning model
+And the user will also understand
+If he is asking a very difficult question
+It will take a little more time
+We will show it on the UI
+Sit tight, churning the numbers
+So he will do a little more weight
+Because he also knows that we have asked a difficult question
+And if he has asked an easy question
+Then we will route it to a model
+Which is giving the answer quickly
+But since the query is simple, it will come correct
+You will have to think
+So, is there any other question at this point?
+Are the requirements clear?
+Let's move ahead
+So, what we discussed
+That we
+Will work in three steps
+What was the first step?
+To gather requirements
+We have done that
+What is the second step?
+To go to the leader board
+And
+Shortlist 5 to 10
+Candidate models
+This will be our next task
+Okay?
+So for this
+The first question
+That comes up is
+Which leader board should we use?
+The best would be
+If we have
+A text to SQL leader board
+From the beginning
+Then it would be the best
+We could directly consult it
+To find out who are the top models
+Right, and then we would put a custom eval on it
+But what do you think?
+Are there text to SQL leader boards?
+Guys
+What do you think?
+Are there text to SQL leader boards?
+Have you ever seen them?
+Actually there are
+You simply have to search
+Text to SQL leader boards
+And you will see
+There are two or three
+First is the bird SQL
+So
+It's like a benchmark
+For text to SQL
+Text to SQL
+Tasks
+So it exists
+But when I
+Explored this leader board
+I didn't like it
+For two reasons
+First reason is
+It's not updated
+Here you will see
+There are some old models
+And they have considered some fine tuned models
+Now Gemini SQL 2
+Is not a model
+It's a fine tuned version
+Which is fine tuned on SQL data
+So in that sense
+I didn't like it
+I can't use their models
+So what should I do with this leader board?
+Second thing which I rejected
+Was
+Their way to keep it in full form
+Short form
+They have named it bird
+And they have picked it up like this
+Byg
+They picked it up
+Largely they have
+Pick up the R in the middle and made it bird
+So I got very angry with this
+So I rejected it
+There is more
+There is a text to SQL leader board
+Called spider
+My main reason to reject it was
+It's not updated, there are no new models
+This is also one
+But again
+They have evaluated all the harnesses
+Like
+This is Genloop Sentinel Agent V2 Pro
+I don't know which model this is
+Most likely this is not a model
+Some company has made a complete harness
+They have made a system
+They have ranked it
+Then there is another one
+Called Live SQL Bench
+Now
+When I went to Live SQL Bench
+There is a leader board
+But
+It is not updated
+Claude Opus 4.6
+This is a recent model
+5.5
+2.6 from KMI
+This has brought the next generation of models
+And second
+Which data they have used
+To do this entire benchmarking
+I didn't know that
+In short I couldn't trust
+These text to SQL leader boards
+So I saw a fallback
+That instead of going specific
+To text to SQL leader boards
+Let's go to
+Coding leader boards
+Because SQL generating
+Is kind of a coding activity
+So
+We can extract
+From coding leader boards
+Information
+So in this class what I am going to do is
+That I am going to
+Use a coding leader board
+And coding
+Capability
+We will treat it like alias
+To generate SQL
+Basically
+How good is the
+Capability of SQL generating
+Of any model
+We will find out from this
+That how good is its coding capability
+I guess you can understand
+We are using coding capability as an alias
+So one leader board
+Which I liked the most
+Is called LLMStats.com
+So basically this is a
+Third party website
+Which brings data from different leader boards
+And gives an overall rating
+By doing some analysis
+So they had a lot of information
+So if you go to
+Best AI for coding
+So they have kind of
+Made a leader board
+And the good thing is that
+It is updated, the most recent models
+Fable, 5.6 Sol
+All these models
+Were rated
+Along with some more information
+Like the cost
+And the speed
+And the context
+So you can see
+Almost every type of coding
+Benchmark has been aggregated
+And based on that
+They have given a rating
+So the top coding model
+According to this leader board is
+GPT 5.6
+Then Fable 5, MyTos Preview
+5.6
+Terra, Kimi K3
+And then News 2-3 days ago
+It has made a big mess
+So it has rated Kimi K3
+Claude Opus 4.8
+Opus 5 just came 2-3 days ago
+So basically all the top
+Models are here
+Coding models
+How many models are there? 146 models
+So I thought this seems like
+A good leader board which we
+Can use
+To actually shortlist our top 5-10
+Candidates
+So now
+We have selected
+Which leader board
+We are going to consult
+After that we have this question
+How would you shortlist?
+How would you shortlist?
+These are your
+Top
+Models
+How would you shortlist?
+Do you have an answer for this?
+Just
+Asking
+What do you think?
+If you were to be
+Putted in this mess
+That if you select 5-10
+Candidate models
+What would be your strategy?
+Then I will tell you what I have thought
+But first I want to hear yours
+Anyone?
+Just type what do you think? How do you select?
+You know the requirements right?
+What are the requirements?
+You can't pay more than 3 lakhs
+Latency should be around 2-3 seconds
+Context doesn't matter
+See
+I will tell you what I did
+I selected 5-10 top models
+First of all there is one thing
+Which is a little confusing
+In this leader board
+They have not told two different
+Pricing
+Input and output are not different
+If you hover here
+They have only told one number
+See how that number came
+I am hovering on this
+Try to read
+What is happening?
+I want to do anything in this class
+But it is failing
+Here actually
+The definition should come
+How they calculated a single price
+Here although below you can see
+One blended
+Can you understand anything from this?
+Refresh it
+Let's refresh it
+Let's hover
+Thank you Varun
+See here it is written
+Blended price per million
+Tokens 4 is to 1
+Input output ratio
+Now can anyone understand
+How did this single number come?
+You should know how to read all this
+That's why I am telling you
+Let's take the fable number
+Claude fable 5
+What was the number?
+We saw it here
+What was Claude fable 5?
+Input was 10
+Output was 50
+Input was 10
+Output was 50
+Now what are you doing?
+You are blending it in 4 is to 1
+Basically what you will do is
+You will do 4 into 10
+You will do 10
+Plus 1 into 50
+And divide by
+4 plus 1
+So this is 40
+And this is 50
+So 90 by 5
+How much? 18
+This is the number you can see here
+Did you understand how this number comes?
+How it comes on single number?
+So many leaderboards give you a blended number
+So in blended number you have to see
+What ratio is used?
+4 is to 1, 8 is to 1
+Different leaderboards have different ratio
+Now what is interesting
+Do you remember
+The prompt we made
+How much was the input to output ratio?
+Do you remember?
+Input prompt
+Which was
+How much size was it?
+400 tokens
+And how much was the output?
+I felt so good at this moment
+That we don't need to do any other calculation
+This blended number
+Is exactly tailor made for our situation
+Our situation
+Our input to output ratio
+Of prompt and output tokens
+Is exactly 4 is to 1
+This means
+That I can directly use this number
+For my application
+It is tailor made
+So what I have to do is
+I have to do the calculation
+In one go
+By taking the value of 10
+So basically my total
+How many tokens are there?
+400 plus 100 means 500
+Multiplied by
+Claude Fabel
+So 18 divided by
+10 lakhs
+This will give me per query charge
+I will multiply that
+From 50,000
+I will multiply that from 30
+I will multiply that
+From 95
+So with this single number
+I will get
+Total cost per month
+So I did exactly that
+What I did first
+I downloaded all this data
+Of 146 models
+I downloaded data of 146 models
+And then I
+Calculated the number of each model
+That how much money
+Will it cost to run that model
+On my application
+So like
+Claude Fabel got 12 lakhs
+And some cheap model got 8 lakhs
+So what I did was
+Calculated for each model
+For 146 models
+I took out my per month cost
+How did I do that?
+Then what I did was
+From those 146 models
+I directly rejected those models
+Which were above 3 lakhs
+I guess you are understanding
+So some
+50-60 models were left
+I don't remember exactly
+But you get the idea that many models were rejected
+Cheap models were rejected
+After that now I have
+Those models which I can use
+And I will have to pay less than 3 lakhs
+I will have to pay less money
+Now what I did was
+I put a simple funda
+I first
+Normalized their rating
+Normalized their rating
+Normalized their rating
+Normalized means
+Like I have to
+Normalize their rating
+Of this model
+So what I will do is
+50-minimum
+Minimum value
+In this column
+Let's see
+So this is a model
+GPT 4.1 nano
+Which has minus 11.1
+So I did 50-minimum
+Minimum value
+Which is again 50
+Minimum value
+You learned normalization
+In machine learning
+So I basically
+Normalized this whole rating column
+Quickly tell me
+What is the benefit of normalizing
+So how much
+Will the value of this column come in?
+Come on guys
+0 to 1 right?
+So
+I got rating of every model
+0 to 1
+Then I saw this speed column
+In which it is being told
+That how many characters will be printed in a second
+This helps us to understand
+The speed of the model
+So I normalized this value too
+So this also came in?
+Then what I did
+I put this formula
+0.9 multiplied by
+Normalized
+Rating score
+Plus
+0.1 multiplied by
+Normalized
+Latency score
+For every model
+So I took this model
+GPT 5.6
+For that I
+Took this model
+0.9 multiplied by
+Normalized rating score
+Which will be 1 because
+This model has maximum rating
+Plus 0.1
+Into its rating score
+This puts 17 characters per second
+Which is very less
+Because if there is one model which puts 603
+Then assume that its normalized score was 0.2
+And I calculated this number
+So basically what I am trying to do is
+That I am testing every model
+First is its speed, second is its latency
+I am giving a lot of weightage to the coding capability
+I am giving 90% weightage
+And I am giving 10% weightage to the latency
+Think fast and tell me
+Why am I giving such a low weightage to the latency
+Why am I giving such a low weightage to the latency
+Don't you think it should have been 50-50
+Don't you think it should have been 50-50
+I will tell you why
+Here actually
+The speed or latency of the character of the model
+Matters less because
+The output we are getting
+Is just a SQL query
+Is just a SQL query
+Which will hardly have
+100 tokens
+Which will hardly have 100 tokens
+So even if a model is
+A little slow
+It won't take much time to print a query
+You understand what I am saying
+If my output was a very big essay
+If my output was a very big essay
+Then latency would have mattered a lot
+Why? Because the entire essay
+Has to be printed
+So if there is a model
+Which
+Which is
+Giving only 3-4 characters per second
+Then it will take a lot of time
+To print the entire response
+But since I have to print just one query
+Then even a slow model
+Will give me good results
+In a decent amount of time
+It will print in 1-1.5 seconds
+But it is possible that if a model is very slow
+Then it will take 2-3-4 seconds
+So in this sense
+I gave less weightage to correctness
+To coding capability
+And I gave less weightage to latency
+But again this is my personal opinion
+You can vary it
+You can do 0.9, 0.8, 0.2
+You can do 0.75, 0.25
+Latency in this application
+Does not matter because
+You don't have to print too many characters
+Even a slow model
+Will print a SQL query quickly
+So the entire operation
+Which I did
+From that finally
+I got my top 10 models
+And I will show you
+These are my top 10 models
+After doing this entire activity
+This model came on top
+GPT 5.6 Tera
+And its monthly cost was
+By the way when I did this exercise
+I kept the monthly budget of 5 lakhs
+In our discussion we had
+Made it 3 lakhs
+But when I did this exercise
+Before taking the class
+My monthly budget was 5 lakhs
+So that is why
+Some of the models
+Will be around 4 lakhs
+This is its throughput
+And this is its overall score
+This score which we calculated
+This one
+0.9 into this
+So let me
+Tell you again
+What was my entire filtration strategy
+I went to the leaderboard
+First of all I
+On the basis of cost
+Removed all the models
+Which will give me
+More than 5 lakhs in monthly expenses
+So some models were left
+Now in some models
+I had to create a ranking
+On the basis of ranking
+I had to create two things
+One its coding capability
+And the other its latency
+Or throughput, how many characters per second it is giving
+And I had to combine
+These two into one number
+So I first normalized
+These two in the same range
+0 to 1, simple
+We have learnt that in machine learning
+And then I gave them a weightage
+I gave coding 0.9
+Latency 0.1, behind that
+The reason behind that was that latency
+Doesn't matter much in this particular application
+Because you have to print a very small
+SQL query, how much time will it take
+To print 100 characters
+So that's why
+This was the weightage
+And according to this weightage
+I assigned a number to each model
+And sorted them
+And by sorting
+I got these top 10 models
+So these then are the
+Best models that I can use in my budget
+I can try out
+Now among these
+This model is Muse Spark 1.1
+We can't use this
+Because it is only used in the US
+It is a model of the Shook and Meta
+It can only be used in the US
+Apart from this, yes, we have other options
+But
+Now we have to select the best
+Of the other models
+Now here
+You will see some interesting things
+Like the ones that are paid
+Like GPT or Claude
+They are actually costly models
+But there are certain open source models
+Such as
+Minimax M3
+Which is very cheap
+And it is not even very behind
+If you see
+It is not very behind
+Like if GPT 5.6
+Terra 0.9
+Latency plus coding capability
+So Minimax
+In a very low cost, in a fraction of a cost
+Is giving you 0.76
+Not far behind
+And now this test is still pending
+On which model works on your application
+So this was very interesting
+So now we have GDM, GLM
+All of these are getting cheaper
+And GPT and others are getting a little more expensive
+Sonnet is coming in the middle
+So now what we will do
+We will pick up the rest of the models
+And we will use that
+Basically
+We will put it
+In our custom model eval
+Which will test on our task
+That how the capability of these models is
+And again because this is a live class
+So we cannot test all the models
+So I have thought
+That I will test 5 models
+And show you
+First one is
+GPT
+This one, basically I will color it green
+We will do this
+Because it is a top candidate
+It is a little expensive but it is a top candidate
+It is open AI so we will try this
+I personally want to do Kimi K3
+Because I have heard a lot of praises
+In the last one week
+We will definitely do GROK because
+You never know
+Elon Musk
+What he would have done
+We will do Claude because it is the only one
+Which comes here from the
+Anthropic family
+After that GPT 5.6 could have done Luna
+But we are doing Terra so we are not doing Luna
+Because there is a good chance that
+Terra will give a better performance on Luna
+Because both are coming from the same company
+After that
+In GLM, Quen
+And Minimax
+We are going to do this because all three are Chinese models
+So we will do this
+Why? Because
+In very less money
+It can bring us results
+And Gemini 3.6 Flash
+Could have done it but left it
+So this is the first one
+This is the second one
+This is the third one
+This is the
+Fourth one
+Which is the fifth one
+This is the fifth one, Kimi K3
+We will test the last models
+You guys
+Can test dozens of them
+You won't be able to do this, it is not available
+But you can do the rest of the nine
+I will tell you exactly how to do it
+You don't have to do anything, we will make a list
+Just add the model name
+That will also be evaluated
+But since it is a live class, I will show you five
+And in those five
+We will see which model really comes out
+So here
+We have cleared stage 2
+Stage 1 was
+To gather requirements
+Stage 2 was
+To shortlist 5 to 10 models
+From the leaderboard based on your requirements
+And stage 3 is
+To run custom eval
+Which is the last
+Part of this session
+So is it clear? Till now discussion
+Is it making sense?
+Or no?
+To be honest
+If you have read so many theories
+Then you are able to enjoy
+These practical discussions
+You are feeling
+That yes, I have more stakes
+I understand all the things
+I am able to think a little more
+Questions are coming in my mind
+If I don't read all those theories
+And take a class directly
+Then you will feel
+What is being said, I don't understand
+That is the main difference
+I was saying that theory has to be prepared
+And I have read this over the years
+And it is very unsexy
+I know, many people
+Will leave in the first, second, third session
+But those who will stay
+In the 7th, 8th session
+They start deriving a lot
+So I really hope this class
+Is interesting
+And you are deriving value from it
+So
+Any questions at this point?
+Question from the audience
+Question from the audience
+Question from the audience
+Question from the audience
+Actually
+We are shortlisting
+So this question doesn't come
+This question will come when
+We will run custom eval
+And we will get the result
+There will be a question
+That does GPT 5.6
+Justify our price
+Or we
+Use the M3
+Because it is very close
+And again it varies
+Application to application
+It is a very sensitive application
+Like a medical application
+Where you cannot be wrong
+Then you will pay extra price
+To be more correct
+But let's say it is a consumer grade application
+Where there is not much of a stake
+So to save cost
+You will select a little lower model
+It depends on the situation
+On the application that you are building
+Any other question?
+I will wait for 30 seconds
+Then we
+Will move to the last part of the session
+So far everything
+Is it looking logical?
+I don't think I have
+Used my own will
+And you think sir
+You did not do the right thing
+Are you able to resonate
+With my reasoning?
+Or somewhere you feel that no sir
+You are running your own
+It doesn't look like that
+How to estimate for multi-turn conversations
+I mean the input and output tokens
+It will keep on connecting
+The previous one
+It is a little difficult
+But your history will keep on connecting
+How to do that calculation
+You will have to sit and think a little
+It is not that straightforward
+Like in this situation
+It will be a little estimate based
+Let's move ahead
+And then
+So guys now comes
+The last and most crucial part
+I have 5 candidate models
+And we have to select
+One of these 5
+And now what we will do
+We will run it
+On our data set
+On our task
+So I will tell you the whole flow
+What is the whole flow
+That first of all
+You need a
+Data set
+Which will already be with Crickinfo
+So I also
+Brought that data
+From where?
+From Kaggle
+On Kaggle it is IPL's complete data set
+From 2008 to 2024
+So we will use this database
+We will use this data set
+So we have the data set
+Next thing is
+That we need
+A golden
+Data set
+Basically we need
+A data set in which
+I don't know
+30 to 50
+Questions
+Like one question
+That
+How many
+IPL's
+From 2018 to 2022
+Were killed?
+This is your first question
+In your golden data set
+And then
+We will write
+Its SQL query
+Who will write this SQL query?
+Our data analyst
+And he will
+Write this query
+And run it
+On this database
+And validate it
+That yes, this SQL query
+Answers this question correctly
+Then we will
+Add more questions like this
+That Jaspreet
+Gumbra from 2012
+To 2016
+Which matches
+Did he play on which ground?
+We added this question here
+Our data analyst will come
+For this question
+Will write a SQL query
+And that SQL query
+Will run on the database
+And validate that yes, the query
+Which I have added here
+I have done it correctly
+And like this
+You will make a list of 50 questions
+Which we will call our golden data set
+Now while making this golden data set
+You have to be super careful
+That you keep this data set
+Very representative
+To the distribution of
+The user questions
+So what will you do?
+Out of 50, it can be 10 easy questions
+Then you
+Keep 20 medium questions
+And 20 hard questions
+Because it is possible
+That you get to see this kind of distribution
+Then you will try to create
+A lot of variety in this
+You will want 5 questions on the joints
+5 questions on the sub queries
+On the window functions
+So you will try to keep
+All the possibilities
+On this data
+So this is how you create
+Your golden data set
+You create it manually most of the times
+Or if you are getting it done from an LLM
+Then you make sure
+That the whole thing is correct
+But yeah, at this point
+You will have two things
+First you will have a data set
+Which is obviously with Crick Info
+And second your data analyst team
+Will bat and create a golden data set
+Okay?
+Once the golden data set is created
+Now the evaluation work
+Starts from here
+What will you do?
+During the evaluation
+You will enter
+Your golden data set
+You will pick up every question
+You will pick up question 1
+And send it
+To an LLM
+So you have 5 candidate LMs
+You will test one LLM at a time
+Then the other one, then the third one
+And then you will test the fifth one
+So let's say we are testing the first one
+5.6 Tera
+So what we did
+We picked up question 1
+And sent it to 5.6 Tera
+What did Tera do?
+It generated
+A SQL
+Now what will we do?
+We will pick up this SQL
+And run it
+In our database
+And along with that
+What we will do is
+The first question in our golden database
+The SQL query
+The golden SQL query
+We will run it in the database
+There are two queries
+One from the data set
+And one from LLM
+We will run both of them
+Now think and tell us
+What will be the criteria?
+How would we check that the generated query
+Is correct?
+Can we
+Match the string?
+Tell us quickly
+Can we directly
+Compare this generated query
+Character by character
+With this query
+If character by character is same
+Then the correct query is generated
+But is it a good strategy?
+Is it a good strategy?
+No, because for a single result
+Multiple queries can be written
+Achieving a single result
+Through multiple queries
+Is possible
+So it is possible that the query
+That your data analyst has written
+And to solve that problem
+The query that your LLM has generated
+Both are different
+At least
+Textually
+But how can you
+Check that you run both
+On the database
+And you will get
+A result set from both
+Basically a table
+This will be table 1
+This will be table 2
+And what you do
+You compare these two tables
+That are they both
+Same?
+If they are both same
+Then it means that
+Your generated query is correct
+This is how you check
+That generated query
+Is correct or not
+Same thing you will do for question 2
+Question 2, question 3, question 5
+Question 50
+And against every
+Question you will get to know
+That is it correct
+Or wrong
+And once you
+Will do for 50 questions
+Then you simply get accuracy
+So you get to know that
+Accuracy of 5.6 tera is
+95%
+Then you will do
+The same thing for whom?
+For second model
+Then for third model, then for fourth and fifth model
+And after doing this whole operation
+You will have accuracy of 5 models
+On your data
+And that is the right representation
+Of how your model is performing
+On your task
+So is this entire process clear?
+How to run custom eval?
+Step by step let me revise
+First you need a database
+Second you need a golden
+Data set in which there will be a question
+And the correct query will be there
+Then what you will do is
+Load each model and one by one
+Send questions of golden data set
+For each question the LLM will generate a query
+So what you will do is
+That generated query and the query of golden data set
+You will run both on the database
+Both will get the results and you will compare
+Both the results by value
+To see if both are the same table or not
+If both are the same table
+Then the query is generated correctly
+The query is not the same
+You will do this for 50 questions
+And you will get the average and accuracy
+And that will be the accuracy for your model
+And you will repeat this for all the models
+By the end of this process you will have your answer
+Which model is the best?
+So is this process clear?
+This is what we are going to do
+Let me know if you have any questions
+I will wait for 30 seconds
+Can we make a golden database
+Of golden data set
+Of 100 questions also? Is there a limit?
+No, no, there is not a limit
+There are two problems
+The first problem is that
+Golden data set is generally made by humans
+So here
+You will have to pay to make a golden data set
+It takes time and effort
+It takes money
+The second problem is
+As you increase the size of your data set
+You think
+How many LLM calls are you going to make?
+You have 5 models
+And you
+Are giving 50 LLM calls to each model
+That is like
+250 calls
+If you do 500 questions instead of 50
+Then that is 2500 calls
+So you are giving money in your evaluation
+So you are giving money in your evaluation
+So there will be a budget
+So you have to be careful
+For that also
+As I had taught you
+50 to 500 is okay
+And new questions are added
+When you deploy
+The new question where your model is failing
+You add it in your golden data set
+That is how you decide
+Since the classroom setting is there
+So today I have brought 20 questions
+20 questions
+Very difficult questions
+How we decide
+Between using frameworks like
+DeepEval and creating golden manually
+So I will not answer this question today
+Because this is not a topic
+We have not discussed about DeepEval
+So there is no point in discussing this
+When we will do further
+Obviously frameworks give you more benefits
+They give you more ease to do all this
+So when you read DeepEval
+I will teach you
+So guys
+So guys
+This setup is understood
+Now I will show you step by step
+I have mostly written the code
+But I will show you in the end
+So that you also get a little kick
+So see we will work step by step
+I have written the steps
+I will show you
+You will enjoy it, you don't have to do much
+Just see, observe
+If you have a question then ask
+So what are the steps
+So what I did
+I didn't think much
+I downloaded data from Kaggle
+And I put it in the data folder
+Can you see
+These are the two
+Deliveries.csv
+Deliveries.csv
+And matches.csv
+These are the two files I put here
+Also to keep things a little more simple
+During the evaluation
+I took one more decision
+In the data set we had
+Data from 2008 to 2024
+Data from 2008 to 2024
+I trimmed it
+And I have kept data from 2020 to 2024
+Data from 2020 to 2024
+Simplified it a little during the evaluation
+Because otherwise
+It will take more time
+So data set is clear
+We will use IPL
+Data from 2020 to 2024
+Data from 2020 to 2024
+After that in step 2
+Right now our data is in CSV file
+We have to load that data
+Where
+In a database
+And which database we will use
+SQLite
+So here I have a file
+The name of the file is
+db.py
+If you go and study this file
+Then here is a simple code
+It looks like there are many lines
+But what we are simply doing
+We are reading these two files
+And
+We are taking the data from these 4 years
+And storing it in a database
+That's it
+So you will notice
+When I run this file
+The name of this file
+is
+db.py
+So here a database will be created
+ESPN
+Crickinfo has this data set
+We are making it on the go
+See
+This is our data set
+Okay
+So here is
+Data from 2021 to 2024
+There are two tables, deliveries and matches
+Now we have loaded the data in the database
+So now we can run SQL queries on it
+So I guess this setup step
+Is also clear
+Now the next is a very important step
+We
+Our database
+We have to extract its schema
+Basically we have to tell how many tables are there
+And which columns are there in each table
+And what type are those columns
+Someone can quickly tell me why we are doing this
+Why do we need the schema
+Quickly type and tell me
+Why do we need schema
+Where will we use schema
+Guys
+In system prompt
+Right, I showed you at the beginning
+Did I show it here
+I showed it here
+See
+This thing
+I have to provide this
+In system prompt
+I have to tell which tables
+Which columns are there in each column
+I have to send this information to LLM every time
+So I have to extract it first
+So what we have to do in the next step
+In a file
+We have to extract the schema
+So I have written a code for this
+Again, it is a simple code
+You can go and read it if you want
+By saying schema extractor
+Now the simple foundation of this code is
+That it will go
+Study your database
+And
+Generate schema from it and store it in a file
+Again
+We are not going into the code specifics
+You can just go and
+Check the code
+So I am just running this
+Python 3
+Schema
+Extractor
+.py
+See here a new file will be made
+See
+Schema.sql is there
+And see in this
+This is schema
+There are two tables
+And all the columns of those tables
+And their type we have kept in one place
+We will load this
+Ok, so is this step clear
+We have done this too
+Let's tick in front of what we are going to do
+Now comes the most important step
+Step number 4 where we have to
+Create a golden dataset
+Ideally, you should
+Do this manually
+But I
+Obviously, I got this done from an LLM
+I gave it these instructions
+To make a set of difficult questions
+Although this is not right
+You should also keep easy questions
+But since I wanted to show you
+Which model is performing well and which one is not
+So I made a set of difficult questions
+Of 20 questions
+Ok
+And obviously I had to run it
+To see if it is working properly
+In my database
+So I made a file for that too
+And the name of that file is
+Golden Dataset Generator
+If you see here
+Here every dictionary is
+One
+Question
+Like this question
+What is the average number of runs
+Scored per match
+Give a single number
+Ok
+This is the question and this is the query
+Now think of it as
+This data is written by the analyst
+I have labeled it as a hard query
+Ok
+And how many queries did I make?
+Ok
+And the code below
+What does it do?
+When you run this file
+All these queries will be run on our database
+And will tell
+Whether the query was run properly or not
+So if any query is bad
+Then error will come, then we will know that
+There is a problem with golden dataset
+So what I will do is
+I will quickly
+Do this
+I will simply write
+Python 3
+Golden
+Dataset
+Generator
+Dot py
+I have run it
+See what it is doing behind the scene
+It is running all the queries
+And it is telling that 20 out of 20
+Queries passed
+Here we are not checking that the answer is correct
+Here we are checking that
+There is no SQL error
+Queries at least are properly formed
+So we checked this
+So we have 20 queries
+Now what we have to do is
+Put it in the CSV file
+That will be our golden dataset
+So for that also I have a file
+Make golden dataset
+Its simple work is
+That this golden dataset generator will go in the file
+And the 20 queries here
+Will extract them and make a CSV file
+So basically I have to go
+And I have to just write
+Python 3
+Make
+Golden
+Dataset
+See here a new file has come
+Goldenheart.csv
+If you go here
+You will see that this is our
+Exactly the same 20 questions
+First question is what is the average number of runs
+Per match
+If you go ahead of that then here is the golden query
+Apart from this we have added
+A little more information
+Like
+What is this 1
+1 is the number of rows
+How many rows are we expecting
+So here we are telling whether the query is order sensitive
+Means
+Limit
+Order by descending, order by ascending
+Is being required in that query
+So like in this particular query
+It is false, which means order by clause is not used
+Why is this clause used
+We will discuss it later
+But whatever it is, in this step what we did
+That we
+Not only created our golden dataset
+We also validated it
+We also ran all the queries
+We checked that everything is running properly
+And lastly we also stored it
+In csv format
+So
+6 steps out of 12
+Is there any problem at this point
+In understanding the whole flow
+Let me revise it once
+We brought the dataset
+We put it in the database
+Extracted the schema
+Made the golden dataset
+What did we do in making the golden dataset
+First we made the golden dataset from LLM
+We checked that everything is running properly
+So we put it in the csv file
+We have done it till here
+Is it clear till now?
+Is it clear?
+Guys
+Is there any question till now?
+Okay
+Now what we will do
+We will not directly
+Test the code for 5 models
+We will do it like this
+First of all
+We will run the whole flow once
+What is the whole flow?
+Golden dataset
+From the golden dataset
+We will extract one question
+Let's say
+Q1
+And we will send it
+To an LLM
+And we will see
+If we are getting a SQL query
+Or not
+We will test it
+This will help us understand
+If our setup is working properly or not
+By the way
+We have to test 5 models
+One of them is openAI
+One is Anthropic
+One is GROK
+And maybe 2 Chinese models
+So
+All these models have different APIs
+OpenAI
+Anthropic
+So what should we do?
+Should we write a different code for all?
+Or do we have any other solution?
+Is there any place where we will get 5 models in one place?
+Guys
+Do you know a platform or a service
+Where we will get all the models in one place?
+Perfect
+Saurabh was right
+I guess you must have heard about this platform
+Open router
+Great platform
+Through this
+You
+Can use any model
+You can use its API
+For example
+You need Kimi K3
+It is available
+You need Terra
+It is available
+You need Sonnet
+It is available
+Great platform
+And the best part is
+Its direct integration is also with line chain
+So whatever you have learned in line chain
+Chat, OpenAI
+You can talk to any model through OpenRouter
+So for this particular demo
+We are going to use
+OpenRouter
+The good thing is that you get some free credits
+So even if you can't test all
+You can test 1-2 models
+You can test it with full accuracy
+I have done it myself today
+But to run all of them
+We had to spend some money
+Around 5 dollars, 500 rupees
+So that's why we are going to use
+OpenRouter for this particular demo
+So here we have
+A file called
+FirstTest
+And the simple work of this file
+Is
+Here
+We will have to change one
+From
+.env import
+load.env
+And
+We will have to do
+Load.env
+I will not use
+The API key
+And
+Do I need to give the API key somewhere else?
+Ok, basically what we are doing
+We are selecting one model
+Which is
+GPT-4
+Is the model of OpenAI, this is not our candidate model
+We are using it to just check
+If our flow is working properly or not
+What it will do is, it will pick up a question
+And will send it
+To the model
+And through chat open router
+We will just find out
+If we are getting a correct SQL or not
+That's it, we just want to test
+The whole flow
+So what we will do is
+We will simply write
+Python 3
+First
+Test.by
+See
+This is the question we asked
+And we got this answer
+By flipping it
+A SQL query
+Nothing else is visible except that
+Which basically means that our system prompt
+The whole flow of the code
+Will work properly when we use it
+So this was just a test, even if we didn't do it
+It would have worked
+So what we just did
+Checked the flow
+Is it clear?
+I guess there is no problem
+Now comes
+Step number 8
+Pick candidate models
+So we made a file for this too
+Here you will see a file
+The name of the file is
+Model open router slug
+We have made a list in this
+In that list
+We have added 5 tuples
+In every tuple
+We have named the model
+And its slug
+On open router
+We have picked that
+Because it is necessary during the hit of the API
+So you will see
+If I go to open router
+And I do sonnet 5 here
+So this thing you can see
+This is the exact
+Thing I have written here
+I searched for every model
+If I had to do 10 instead of 5
+I would have searched for model 10
+Their official name is on open router
+I would have put it here
+So this is kind of my
+Model database
+So this is step number 8
+I hope this one is also clear
+Now comes
+Very important step
+Step number 9
+Build the evaluator
+Basically we have to
+Create a rule
+Create an algorithm
+With which we
+Can compare our results
+What we have said
+On one side we will run
+Generated SQL query on database
+On the other side
+We will run the query written by
+Data analyst
+By running both we will get
+Two results sets
+We have to compare both
+If they are same or not
+If they are same then model has generated the right query
+This was our discussion
+So for this whole thing you have to write a logic
+The same logic
+You will get to see in this file
+Evaluator.py
+Here
+There is a lot of code
+But in nutshell what this code does
+When two data frames are given
+One is
+Golden data frame
+When did he get this data frame
+When we ran the golden query on database
+And when did he get the generated
+Data frame
+When we ran the generated query on database
+We compare both
+In this function
+And I have written a lot of logic
+Of comparison
+Like I will tell you quickly what is the logic
+Like if you have
+This is table 1
+And this is table 2
+You have to compare both
+That are they same or not
+So first of all you will test
+That are their numbers of rows
+Same or not
+Think and tell me
+If the number of rows of two tables are different
+Then can they be same tables
+In a sequel result set
+What do you think
+Guys
+If you get two tables
+You searched
+Who is the top 5 batsmen
+You can see 5 rows in one
+And 3 rows in the other
+So obviously the 3 row query was wrong
+So first you will check on the row
+After that
+You will check
+After that
+What will you do
+First of all the values in both the tables
+You will kind of
+Normalize them
+Normalize means not the normalize
+Which I told you earlier
+Not the min max
+Normalize means
+Like
+There is decimal value at one place
+2.0 and integer value at one place
+So at one place 2.0 is there
+And at the same place 2 is there
+So you will treat them the same
+Because you will not want
+That if you treat them separately
+Then it will be wrong query
+So you will do this
+Or you have
+2.9999
+And at the same place 2.9999
+So you know that they are same
+So you will
+Normalize this too
+So all these things we have done
+In the file
+This file has exactly the same code
+That we are checking
+That are the rows same or not
+If they are not same then it is over
+If the rows are same
+Then we are normalizing all the values
+We are doing multiple things
+After that what we are doing
+That in both the tables
+The
+Values that are there
+We are organizing them row by row
+We are organizing them row by row
+This is table 1
+And
+We are doing the same for table 2
+And then what we are doing
+We are comparing
+These two
+If the values are same then table is same
+And if
+Order matters
+Like by the way
+We are sorting first
+Sorry I got confused here
+Let me tell you again
+First you checked if both the rows are same or not
+They are same
+Then what you did
+You normalize all the values in the table
+After that
+You set the values of both the tables
+Like this
+In the list
+In the form of tuple
+After that what you will do
+You will sort these values
+Okay
+These values will be sorted
+And you will sort the one below
+The other table too
+And when sorting will be done in both the tables
+Then you will match
+That the results of both the tables are exactly same or not
+We are doing this because sometimes
+It can be reordered
+One value in a table
+Row is on number 1
+And the same value in the other is on row number 2
+Depending on the variation of the query
+That's why we are sorting and comparing
+But if order matters
+Which we will know
+From our golden query
+From our golden data set
+Here we are telling
+That whether order matters or not
+For that query
+If order matters
+That means if there is order by clause
+Then we will not do this sorting
+And will compare without sorting
+By comparing without sorting
+We matched that means both of them have set the right order by clause
+Otherwise it's false
+So we will test this too
+And there are 2-3 more checks
+It's already 10 o'clock
+So I am not going into details
+Just understand that
+In this file
+This evaluator.py file
+We have put a lot of effort in it
+Just to make sure
+That when two tables are given to you
+To compare
+You can compare them properly
+And tell the correct result
+And you can see that in evaluator.py
+This part is a bit rushed
+But again this code will be given to you
+Just put it on the line by line
+You will understand
+Just summarize the logic
+You will understand
+So going back
+We have
+Evaluation logic
+With which we can tell whether the generated query
+Is giving the correct results or not
+Now the last thing
+Is to orchestrate the logic
+And this is the last file
+Which I want to show you
+Which is main.py
+And what is the whole work in main.py
+See it's written here
+Load the model
+There are 5 models
+Load the models
+Run the golden data set on every model
+After that run the generated SQL
+On the database
+And run the golden query on the database
+Evaluate with the help of
+Evaluate.py
+And log the scores at one place
+It depends on the files
+Schema.sql
+Because with that we are making our system prompt
+Golden data set
+Obviously it won't work without it
+Model open router slug
+From here we are getting the information
+And from evaluator.py
+We are getting the information
+That whether our result is correct or not
+This is the flow written here
+You will see simply
+What we are doing is loading schema
+Loading golden data set
+Connecting it to the database
+Then run the loop for every model
+And what we are doing in the loop
+We are just calling the model
+Bringing the SQL
+Executing the SQL
+And then calling the function
+Evaluate
+Which is written in this file
+Calling this function
+Calling this function
+This function is telling us
+Whether the result is matched or not
+Or
+We are logging everything else
+This is the main task
+So now without
+Any delay
+What we will do is
+We will simply do the
+Final task
+Which is we will run the main file
+Main.py
+And we will hit enter
+And the task will start
+And task
+Okay
+There is one problem
+Our file name is
+Golden.hard
+And in this code
+We have assumed the file name
+So I will rename it
+I will make it
+Golden data set
+Which is expecting our code
+Let's run it one more time
+And
+Now see guys
+Our evaluation has started
+First of all we are working with 5.6
+Terra
+The first question was done correctly
+Okay match means
+The query generated
+Result of that and
+Result of the golden data set query
+Failed in the second one
+So there is a mismatch
+The third one matched
+And now this will be for 20 questions
+GPT 5.6 Terra
+And this will happen
+With every model and eventually
+We will have our result
+Let's wait, we can wait in this
+So at this point
+If you have any questions you can ask
+I will wait
+So so far
+GPT 5.6 Terra is going fine
+7 questions
+I have evaluated 8
+Only one error has been done
+Which was the second question
+Varun yes
+Obviously you will use
+These AI tools
+You can also do a very simple version of this
+Coding with your hands is not a big deal
+The whole project
+It is very simple
+Because if you understand logically
+You can see some extra code
+And comments because I have generated the code myself
+But it is not difficult
+It is very easy to understand
+Never
+At the level you are at
+Don't take the pressure to understand the code line by line
+What is the whole file doing
+What is the function doing
+If you understand that then you are in control
+Think like this
+See guys question number 10 failed
+Failed on 11 because these are brutal questions
+I have labeled it brutal
+Because these are really difficult questions
+So far 3 have failed
+Rest all are correct
+GPT 5.6 Terra
+Meanwhile you can ask questions
+Because I can't do anything
+The screen will come slowly
+And it will be for 5 models
+So you will have to wait for another 10 minutes
+Can we do a proper
+E2E end to end text
+To sequel project which involves
+Complex joins reasoning etc
+The goal of this course
+Is not to build projects
+It is to evaluate projects
+So we can't go to make projects
+In this course
+Mostly I will make something
+And then test it
+In LLM eval we cannot build projects
+That is not the point of this course
+So far it is going well
+There are 4 errors
+In 18 questions
+In 18 questions
+Failed
+80% came
+GPT 5.6
+Any separate class on this
+May be not part of this eval course
+That we can do
+Where is the scope
+You are doing 6 classes in a week
+You have to see the scope
+Rest there is nothing difficult
+You can do it
+I am studying basics
+Kimi K3 has come
+If you don't know
+This new model has been recently launched
+Moonshot AI
+And it is a model of 2.7 trillion
+Parameters
+And people are saying that
+It is very close to Fable 5
+1 third of the cost
+And it has created a lot of rift
+In US share markets
+Because such a powerful
+Frontier model has come from China
+While being open weights
+Not exactly open source but open weights
+So let's see how K3 does
+I have a lot of expectations from this model
+Let's see
+Does GPT 5.6 beat it or not
+See question number 6
+There is a sequel error
+What does this mean
+There is an error in that
+So this is not right or wrong
+This is a syntax error
+This is coming here
+So
+Not good
+Meanwhile you can ask questions
+We can have a discussion around
+Whatever we discussed
+Is normalization
+Generally better than
+Just one second guys
+Is normalization generally
+Better than keeping everything in a single
+Table while normalization is usually
+Preferred wouldn't it increase the error rate
+For sequel generation since queries would
+Require multiple joins as complexity of
+Sequel queries generation
+Which normalization
+Are you talking about
+The one which was applied on LLM leaderboard
+Or the one which was applied on data
+This is performing very badly
+In K3
+In 3 questions there is a sequel error
+The same famous saying
+China's stuff
+Oh you are talking about database normalization
+You are talking about
+Is normalization generally better than
+Keeping everything in a single table while
+Normalization is usually preferred wouldn't it increase
+The error rate for sequel generation since
+Queries would require multiple joins
+For analysis
+De-normalized tables are preferred
+Obviously
+So if this entire activity
+Is around analysis then you will use
+De-normalized tables only
+For transactional databases you do
+Normalization
+So yeah ESPN Crick Info team
+I am pretty sure they have already
+Normalized or de-normalized the data
+Obviously
+Normalization is
+Good for transactional databases
+Or de-normalization is
+Good for analytical databases
+There are some terms too
+I don't remember exactly
+There are some terms
+OLTP
+OLEP
+There are some terms
+Online Transaction Processing
+Online Analytical Processing
+Also you know what I am noticing
+That K3 is
+Very slow
+You are observing this
+Maybe because it is a big model
+Plus it is a reasoning model
+I haven't touched anything in reasoning settings
+So there is a good chance that
+It is taking a lot of time in reasoning
+It is a slow model
+Latency issues can occur in this model
+Plus also it is not performing very well
+So I don't think it will be able to do this
+In our task
+This is a very good example
+To understand if you see
+If a very sluggish model comes on the leaderboard
+It does not
+Guarantee that it will do that much
+Good on your task. This is a very good example
+KVK3 is being spread in the news
+But when we put it on our task
+See what is happening
+It is slow too
+And it is not performing great
+So this is a very good lesson
+Which you have practically seen
+K3 reviews are not good on Reddit
+So we can see the reason
+People must have tested their own
+They must have used semi-bals
+See it is very bad
+I think it is getting 50% accuracy
+Two more questions
+Let's see
+We could have done latency
+How much time it took in the whole activity
+We could have done that too
+But I have not written that code
+I will do that code tomorrow
+Six are SQL errors
+Apart from that
+I can see two mismatch
+Most likely it is around 50% accuracy
+That's bad
+For a frontier model of this scale
+2.7 trillion parameters
+Is not a joke
+55%
+GROK came
+I was getting bored
+I could have brought this from home
+I could have brought it from home
+But I thought I would get a kick
+If it was in front of me
+But now it feels like
+It is taking longer
+GROK is
+Clearly faster than
+K3
+It is getting faster
+And there are no errors yet
+GROK cracked the second question
+Did both of them do that wrong?
+Yes
+Question number two was in our golden dataset
+In that, GPT and
+Chemiketri both failed
+But GROK did it
+In fact, there is no error yet
+I always find GROK underrated
+Also, you can never underestimate Elon Musk
+In brutal question also
+The brutal question
+Question number nine
+That also went wrong
+Will it not get any error?
+It's here, first one
+Commentators first
+Right
+You have seen that live
+Guys, there are two more models after this
+But I am hoping
+That MINMAX
+MINIMAX
+That will be a little faster
+And what was the other one?
+I don't remember which one
+SONNET
+SONNET will also
+Be faster than these
+Because
+I don't know how many parameters
+But it should be below OPUS
+It has to be faster
+Is GROK 4.5 the most recent one?
+Or is there any generation above it?
+I haven't followed
+Which one is the most recent
+Does anyone know?
+Is it the most recent one?
+Okay
+Yes, Tarun
+And this is not done by project manager
+AI engineers only do this
+Because
+It's a very technical job
+Then you will report it to project manager
+And then
+He can take the final decision
+But a lot of input will go from your side
+This is a very bad photo
+Only two mistakes have happened so far
+So it's like
+90% accuracy
+It's fast too
+Right?
+It's also fast
+How much was GROK's expense?
+Let me quickly check
+How much was GROK costing?
+Just one second
+GROK was
+2.5 lakh
+It's almost half of Tera
+It's very less than Kimi K3
+It's still a clear winner
+It's at 90%
+Look at SONNET
+It's so fast
+It's already done 7 questions
+Let's see what happens on brutal questions
+SONNET
+It's a good model
+And it's SONNET 5 by the way
+It's near previous generation of Popus
+It's near previous generation of Popus
+It's also lost 2 questions
+One more mistake
+It's done in brutal for sure
+But it's very fast
+I think
+It's faster than all three models
+I'll give you one more
+It's faster still now
+It's clearly visible
+85%
+Nice
+How much is SONNET's expense?
+SONNET is
+at
+GROK is still cheaper
+Oh, here comes our
+Dark Horse
+It's already done 2nd question
+What's the 2nd question?
+We'll have to see
+3 models are still wrong
+10th and 11th
+10th and 11th
+But that was
+brutal question
+It was very difficult to set
+That's it guys
+This is the last one
+Once this is done, we'll conclude
+I know it took more time
+But I think
+I've done a lot of coverage
+I've discussed a lot
+It seems like
+we are colleagues and working for a company
+and we are concluding a project
+I feel like that
+GROK is faster than
+MINIMAX
+MINIMAX
+I think it can be at 3rd
+MINIMAX is gone
+China's product
+It's coming in Chinese models
+SQL error
+Aman is right
+Not bad as the latency is very good for SONNET
+We can push for extra 25k
+These will be the discussions
+MINIMAX is gone
+3 in a row
+It's coming in Chinese models
+SQL error
+SQL error is coming in American models
+SQL error is not coming
+They are giving the right syntax
+Their syntax is disappearing
+Is it being written in Mandarin?
+I am writing my own SQL
+I have banned everything
+So I will make my own
+I know
+Tell me what do you think
+Who is the winner?
+Who will you select?
+This is a small dataset
+It should be a bigger dataset
+In 20 questions
+1 question is carrying 5%
+The dataset should be bigger
+But I think in bigger datasets
+GROK will beat
+You can have multiple runs on the same dataset
+Because there is no connection
+The next API call
+is independent
+You will get more statistical evidence
+That we have run this evaluation 5 times
+Still
+Top score is GROK
+On an average 5 runs
+You can do that too
+But you will have confidence
+That even after 5 runs
+We are getting the same result
+Last 2 questions
+I think 5-6 questions are wrong
+65%
+Here is your final result
+The poorest was
+Kini K3
+90 and 85
+So it is basically between
+GROK and Sonnet
+Right
+Because Terra is very costly
+Terra is very costly
+So why will we
+spend this much
+So question is between
+GROK and Sonnet
+Because
+Cost is close
+Their index was also equal
+From the speed point of view
+Throughput is saying that GROK is faster
+But in our experience
+CROD was faster
+With Sonnet
+There is a little bit of anthropic reliability
+In its API
+So in that sense
+You can give Sonnet a little bit of priority
+You decide guys
+We have 2 finalists
+GROK 4.5
+And CROD Sonnet 5
+These are our candidate models
+You decide what to do
+I will incline towards Sonnet
+In this sense
+Because the company seems more reliable
+To me
+So their API and everything will be more reliable
+So GROK
+GROK has a little bit of Elon's personality
+So I don't feel it is reliable
+So maybe I will go towards
+Sonnet
+Because it is a more stable model
+But yeah
+This can be your decision
+We can also have a voting
+This also happens in companies
+When you can't take a decision, you do voting
+But yeah
+That's your session guys
+This is what I wanted to teach
+Now you tell me if you have any questions
+This was our today's session
+This is what we discussed in the beginning
+We have achieved our
+Goal
+How was it?
+Did you enjoy?
+Yeah
+Ok
+Just a little
+One thing was maybe a little rushed
+That was the code explanation
+I tried to explain it
+In two hours
+You will get the code tomorrow
+Try to do it with yourself
+You try it in some other app
+Test2Sequel is one thing
+It can be something else
+you will understand once you do it
+I am at the last minute, you can ask any other question
+Thank you guys, Happy Guru Purnima to you guys also
+We can do the same activity in system design in future
+It would be real valuable, we can prepare something before class to discuss in a better way
+or else their case studies will be in system design
+What will be our next course after evals? AI security
+Sorry Upinder, I haven't made github repo yet
+I am working on my local machine, you will get it tomorrow
+unfortunately, sorry, I haven't made it yet
+I have to go home now
+So, okay, see you in the next class
+See you in the next class
+This part of model evals is completed
+I will tell you this quickly
+This part, we have completed this part
+Model eval part, okay, benchmarks are done
+Custom eval run is also done
+Now going forward we will focus on application evals
+Model selection is done, now how to do application, we will do that
+So, now I will close the session
+See you in the next session, bye, good night
