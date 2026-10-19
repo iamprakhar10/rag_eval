@@ -3,6 +3,7 @@
 import asyncio
 import json
 import os
+import sys
 import time
 from pathlib import Path
 
@@ -19,6 +20,11 @@ from groq import Groq, RateLimitError
 from rag_eval_deepeval.retriever import MODEL_NAME, build_retriever
 
 ROOT = Path(__file__).resolve().parents[1]
+if not __package__:
+    sys.path.insert(0, str(ROOT))
+
+from eval.harness import load_goldens, print_summary, summarize_by_metric
+
 load_dotenv(ROOT / ".env")
 
 GOLDEN_PATH = ROOT / "goldens/retriever_goldens.json"
@@ -74,7 +80,7 @@ class GroqJudge(DeepEvalBaseLLM):
 def run(retriever):
     """Retrieve context for three goldens and evaluate contextual recall and precision."""
     # 1. Load the first three goldens.
-    goldens = json.loads(GOLDEN_PATH.read_text(encoding="utf-8"))[:LIMIT]
+    goldens = load_goldens(GOLDEN_PATH)[:LIMIT]
 
     # 2. Run the retriever and build one test case per golden.
     test_cases = []
@@ -96,7 +102,7 @@ def run(retriever):
     ]
 
     # 4. Evaluate sequentially to respect Groq's token limit; DeepEval prints the report.
-    return evaluate(
+    result = evaluate(
         test_cases=test_cases,
         metrics=metrics,
         hyperparameters={
@@ -111,7 +117,8 @@ def run(retriever):
         async_config=AsyncConfig(run_async=False),
         display_config=DisplayConfig(results_folder=str(ROOT / ".deepeval/retriever_results")),
     )
+    return summarize_by_metric(result)
 
 
 if __name__ == "__main__":
-    run(build_retriever(top_k=TOP_K))
+    print_summary("retriever", run(build_retriever(top_k=TOP_K)))
