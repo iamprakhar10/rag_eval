@@ -14,7 +14,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 
-load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 MODEL_NAME = os.getenv("GENERATOR_MODEL", "openai/gpt-oss-120b")
 ABSTENTION = "I don't have enough information in the course material to answer that."

@@ -30,7 +30,7 @@ No embedding API key is required. Existing keys in `.env` are preserved; Groq
 can be used for evaluation and answer generation later.
 
 ```python
-from rag_eval_deepeval.retriever import build_retriever
+from src.retriever import build_retriever
 
 retriever = build_retriever()
 results = retriever.invoke("What is regression testing?")
@@ -47,11 +47,11 @@ with DeepEval's contextual precision and recall. The single evaluation script is
 and saves reports under `.deepeval/retriever_results/`.
 
 To generate an answer from retrieved chunks, use
-[src/rag_eval_deepeval/generator.py](src/rag_eval_deepeval/generator.py):
+[src/generator.py](src/generator.py):
 
 ```python
-from rag_eval_deepeval.retriever import build_retriever
-from rag_eval_deepeval.generator import generate, generate_stream
+from src.retriever import build_retriever
+from src.generator import generate, generate_stream
 
 question = "What is online eval?"
 docs = build_retriever().invoke(question)

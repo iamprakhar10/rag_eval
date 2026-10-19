@@ -23,12 +23,11 @@ from deepeval.test_case import LLMTestCase
 from deepeval.models import DeepEvalBaseLLM
 from groq import Groq, RateLimitError
 
-from rag_eval_deepeval.generator import MODEL_NAME, generate
-
 ROOT = Path(__file__).resolve().parents[1]
 if not __package__:
     sys.path.insert(0, str(ROOT))
 
+from src.generator import MODEL_NAME, generate
 from eval.harness import load_goldens, print_summary, summarize_by_metric
 
 load_dotenv(ROOT / ".env")

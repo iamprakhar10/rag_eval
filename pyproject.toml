@@ -21,8 +21,12 @@ dependencies = [
 ]
 
 [project.scripts]
-rag-eval-deepeval = "rag_eval_deepeval.retriever:main"
+rag-eval-deepeval = "src.retriever:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "src"
+module-root = ""

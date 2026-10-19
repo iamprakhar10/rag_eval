@@ -17,12 +17,11 @@ from deepeval.models import DeepEvalBaseLLM
 from deepeval.test_case import LLMTestCase
 from groq import Groq, RateLimitError
 
-from rag_eval_deepeval.retriever import MODEL_NAME, build_retriever
-
 ROOT = Path(__file__).resolve().parents[1]
 if not __package__:
     sys.path.insert(0, str(ROOT))
 
+from src.retriever import MODEL_NAME, build_retriever
 from eval.harness import load_goldens, print_summary, summarize_by_metric
 
 load_dotenv(ROOT / ".env")
