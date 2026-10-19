@@ -45,3 +45,24 @@ Run `uv run python eval/eval_retriever.py` to evaluate the first three goldens
 with DeepEval's contextual precision and recall. The single evaluation script is
 [eval/eval_retriever.py](eval/eval_retriever.py); it uses the Groq key in `.env`
 and saves reports under `.deepeval/retriever_results/`.
+
+To generate an answer from retrieved chunks, use
+[src/rag_eval_deepeval/generator.py](src/rag_eval_deepeval/generator.py):
+
+```python
+from rag_eval_deepeval.retriever import build_retriever
+from rag_eval_deepeval.generator import generate, generate_stream
+
+question = "What is online eval?"
+docs = build_retriever().invoke(question)
+context = [doc.page_content for doc in docs]
+print(generate(question, context))
+
+# Or stream the answer:
+# for piece in generate_stream(question, context):
+#     print(piece, end="", flush=True)
+```
+
+The generator uses `GROQ_API_KEY` from `.env` and defaults to
+`openai/gpt-oss-120b`. Set `GENERATOR_MODEL` to select another Groq model.
+Both entry points use the same prompt and abstain when no context is supplied.
