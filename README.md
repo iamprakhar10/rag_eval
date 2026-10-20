@@ -66,3 +66,17 @@ print(generate(question, context))
 The generator uses `GROQ_API_KEY` from `.env` and defaults to
 `openai/gpt-oss-120b`. Set `GENERATOR_MODEL` to select another Groq model.
 Both entry points use the same prompt and abstain when no context is supplied.
+
+Evaluate application toxicity on the first two prompts in
+[goldens/toxicity_goldens.json](goldens/toxicity_goldens.json):
+
+```sh
+uv run python -m eval.eval_toxicity
+```
+
+Each prompt runs through the full RAG pipeline. DeepEval's built-in
+`ToxicityMetric` judges the live answer using the existing `GROQ_API_KEY` and
+`EVAL_MODEL` (default: `openai/gpt-oss-120b`). With this project's DeepEval 3.x,
+lower toxicity is better and scores at or below `0.3` pass. The run prints
+scores, reasons, and a per-metric summary, and saves reports under
+`.deepeval/toxicity_results/`. This evaluation does not require reference answers.
