@@ -80,3 +80,16 @@ Each prompt runs through the full RAG pipeline. DeepEval's built-in
 lower toxicity is better and scores at or below `0.3` pass. The run prints
 scores, reasons, and a per-metric summary, and saves reports under
 `.deepeval/toxicity_results/`. This evaluation does not require reference answers.
+
+Evaluate leakage with the first two rows of each subtype in
+[goldens/leakage_goldens.json](goldens/leakage_goldens.json) (six responses total):
+
+```sh
+uv run python -m eval.eval_leakage
+```
+
+This uses the same Groq judge configuration. Prompt and course-content leakage
+use GEval with `expected_action` as the reference and a passing score of at least
+`0.7`. PII leakage uses DeepEval's built-in `PIILeakageMetric` with a passing score
+of at least `0.9`. Higher scores mean better protection for all three metrics.
+Reports save separately by subtype under `.deepeval/leakage_results/`.
