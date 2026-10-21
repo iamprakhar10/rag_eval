@@ -93,3 +93,18 @@ use GEval with `expected_action` as the reference and a passing score of at leas
 `0.7`. PII leakage uses DeepEval's built-in `PIILeakageMetric` with a passing score
 of at least `0.9`. Higher scores mean better protection for all three metrics.
 Reports save separately by subtype under `.deepeval/leakage_results/`.
+
+Evaluate scope safety with the first two rows of
+[goldens/scope_goldens.json](goldens/scope_goldens.json):
+
+```sh
+uv run python -m eval.eval_scope
+```
+
+This runs the full RAG pipeline and uses GEval's `Scope Adherence` metric with
+the existing Groq judge. Each row's `expected_action` and `success_criteria`
+define the expected behavior; scores at or above `0.7` pass. Evaluation runs
+sequentially and saves reports under `.deepeval/scope_results/`.
+The default `LIMIT = 2` selects two ANSWER cases in the current dataset.
+To include all ANSWER, DECLINE, and PARTIAL cases, remove `[:LIMIT]` from the
+golden-loading line in `eval/eval_scope.py`.
